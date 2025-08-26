@@ -1,0 +1,558 @@
+
+<!-- 这是 PCL 的主页自定义文件。由 Python 脚本自动生成 -->
+<local:MyCard Title="📅 今日" Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="25,40,23,15">
+<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是2025年08月26日，不是法定节假日。</TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" FontSize="11" Foreground="#888">
+            更新时间: 2025-08-26 20:48:00
+        </TextBlock>
+        <local:MyIconTextButton Margin="-15,10,0,0" Height="35" HorizontalAlignment="Left"
+                    Text="刷新主页" EventType="刷新主页" Grid.Column="1"
+                    LogoScale="0.8" ColorType="Highlight"
+                    Logo="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="📖 历史上的今天" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+
+        <UniformGrid Columns="2" Margin="0,0,0,8">
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="英国首相罗伯特·沃波尔出生" 
+                Info="1676年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=英国首相罗伯特·沃波尔出生" 
+                Type="Clickable" />
+            
+
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="“近代化学之父”拉瓦锡出生" 
+                Info="1743年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=“近代化学之父”拉瓦锡出生" 
+                Type="Clickable" />
+
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="詹姆斯·库克率领皇家努力号帆船开始远征" 
+                Info="1768年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=詹姆斯·库克率领皇家努力号帆船开始远征" 
+                Type="Clickable" />
+
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="德国经济学家李斯特出生" 
+                Info="1789年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=德国经济学家李斯特出生" 
+                Type="Clickable" />
+
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="法国国王路易·菲利普逝世" 
+                Info="1850年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=法国国王路易·菲利普逝世" 
+                Type="Clickable" />
+
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="中国人民解放军的创建者之一陈毅出生" 
+                Info="1901年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=中国人民解放军的创建者之一陈毅出生" 
+                Type="Clickable" />
+
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="美国哲学家威廉·詹姆士逝世" 
+                Info="1910年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=美国哲学家威廉·詹姆士逝世" 
+                Type="Clickable" />
+
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="美国妇女获得选举权" 
+                Info="1920年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=美国妇女获得选举权" 
+                Type="Clickable" />
+
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="不丹王国首任国王乌颜·旺楚克逝世" 
+                Info="1926年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=不丹王国首任国王乌颜·旺楚克逝世" 
+                Type="Clickable" />
+
+            <local:MyListItem 
+                Margin="0,2,10,8"
+                Title="香港政界人物田北辰出生" 
+                Info="1950年08月26日"
+                EventType="打开网页" 
+                EventData="https://cn.bing.com/search?q=香港政界人物田北辰出生" 
+                Type="Clickable" />
+        </UniformGrid>
+            
+    </StackPanel>
+</local:MyCard>
+
+<Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="100" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="🔥 新闻热点" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+</Grid>
+
+
+<local:MyCard Title="🔥 新闻热点" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <UniformGrid Columns="3" Margin="0,0,0,8"> 
+            <StackPanel Margin="0,2,10,8">
+                <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🔥 头条热榜" />
+                
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/1.PNG"
+            Title="中方回应日本呼吁各国不参加九三阅兵"
+            Info="🔥51028839"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/trending/7542227689508421670/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542227689508421670%22%2C%22hot_board_impr_id%22%3A%22202508262047515E577A14E24233B9970D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E5%9B%9E%E5%BA%94%E6%97%A5%E6%9C%AC%E5%91%BC%E5%90%81%E5%90%84%E5%9B%BD%E4%B8%8D%E5%8F%82%E5%8A%A0%E4%B9%9D%E4%B8%89%E9%98%85%E5%85%B5%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542227689508421670"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/2.PNG"
+            Title="解放军拖船抵达仁爱礁释放何信号"
+            Info="🔥46172803"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/trending/7542851360870370859/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542851360870370859%22%2C%22hot_board_impr_id%22%3A%22202508262047515E577A14E24233B9970D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%A7%A3%E6%94%BE%E5%86%9B%E6%8B%96%E8%88%B9%E6%8A%B5%E8%BE%BE%E4%BB%81%E7%88%B1%E7%A4%81%E9%87%8A%E6%94%BE%E4%BD%95%E4%BF%A1%E5%8F%B7%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542851360870370859"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/3.PNG"
+            Title="见证我国能源高质量发展多个“第一”"
+            Info="🔥41778880"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/article/7542738079233147407"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/4.PNG"
+            Title="中方回应特朗普称希望年内尽快访华"
+            Info="🔥37803094"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/trending/7541771399947567123/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227541771399947567123%22%2C%22hot_board_impr_id%22%3A%22202508262047515E577A14E24233B9970D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E6%96%B9%E5%9B%9E%E5%BA%94%E7%89%B9%E6%9C%97%E6%99%AE%E7%A7%B0%E5%B8%8C%E6%9C%9B%E5%B9%B4%E5%86%85%E5%B0%BD%E5%BF%AB%E8%AE%BF%E5%8D%8E%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7541771399947567123"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/5.PNG"
+            Title="海南政法委原书记刘星泰贪3.16亿获死缓"
+            Info="🔥34205654"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/trending/7542816193477066771/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542816193477066771%22%2C%22hot_board_impr_id%22%3A%22202508262047515E577A14E24233B9970D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B5%B7%E5%8D%97%E6%94%BF%E6%B3%95%E5%A7%94%E5%8E%9F%E4%B9%A6%E8%AE%B0%E5%88%98%E6%98%9F%E6%B3%B0%E8%B4%AA3.16%E4%BA%BF%E8%8E%B7%E6%AD%BB%E7%BC%93%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542816193477066771"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/6.PNG"
+            Title="何小鹏说打工实现不了财富自由"
+            Info="🔥30950555"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/trending/7542412101646614582/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542412101646614582%22%2C%22hot_board_impr_id%22%3A%22202508262047515E577A14E24233B9970D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BD%95%E5%B0%8F%E9%B9%8F%E8%AF%B4%E6%89%93%E5%B7%A5%E5%AE%9E%E7%8E%B0%E4%B8%8D%E4%BA%86%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542412101646614582"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/7.PNG"
+            Title="中国地下700米有了个全球第一"
+            Info="🔥28005220"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/trending/7542696893692968986/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542696893692968986%22%2C%22hot_board_impr_id%22%3A%22202508262047515E577A14E24233B9970D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E5%9C%B0%E4%B8%8B700%E7%B1%B3%E6%9C%89%E4%BA%86%E4%B8%AA%E5%85%A8%E7%90%83%E7%AC%AC%E4%B8%80%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542696893692968986"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/8.PNG"
+            Title="我们为什么要阅兵"
+            Info="🔥25340171"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/trending/7542478914535292966/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542478914535292966%22%2C%22hot_board_impr_id%22%3A%22202508262047515E577A14E24233B9970D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E9%98%85%E5%85%B5%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542478914535292966"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/9.PNG"
+            Title="盗墓贼看小说学盗墓挖走20余件国宝"
+            Info="🔥22928735"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/trending/7542676819254890010/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542676819254890010%22%2C%22hot_board_impr_id%22%3A%22202508262047515E577A14E24233B9970D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%9B%97%E5%A2%93%E8%B4%BC%E7%9C%8B%E5%B0%8F%E8%AF%B4%E5%AD%A6%E7%9B%97%E5%A2%93%E6%8C%96%E8%B5%B020%E4%BD%99%E4%BB%B6%E5%9B%BD%E5%AE%9D%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542676819254890010"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/10.PNG"
+            Title="山东一地现七彩祥云为地震前兆？假的"
+            Info="🔥20746777"
+            EventType="打开网页"
+            EventData="https://www.toutiao.com/trending/7542763345737924635/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542763345737924635%22%2C%22hot_board_impr_id%22%3A%22202508262047515E577A14E24233B9970D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%B1%B1%E4%B8%9C%E4%B8%80%E5%9C%B0%E7%8E%B0%E4%B8%83%E5%BD%A9%E7%A5%A5%E4%BA%91%E4%B8%BA%E5%9C%B0%E9%9C%87%E5%89%8D%E5%85%86%EF%BC%9F%E5%81%87%E7%9A%84%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542763345737924635"
+            Type="Clickable" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.toutiao.com/" />
+                </Grid>
+            </StackPanel>
+            <StackPanel Margin="0,2,10,8">
+                <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🐧 腾讯新闻" />
+                
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/1.PNG"
+                Title="习近平会见俄罗斯国家杜马主席沃洛金"
+                Info="2025-08-26 12:16:06  |  8月26日上午，国家主席习近平在北京人民大会堂会见俄罗斯国家杜马主席沃洛金。习近平指出，中俄关系是动荡变革的当今世界最稳定、最成熟、最富战略内涵的一组大国关系。持之以恒推动中俄关系高水平发展，符合两国人民根本利益，也是世界和平的稳定源。今年5月，我对俄罗斯进行国事访问并出席纪念苏联伟大卫国战争胜利80周年..."
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826A048XP00"
+                Type="Clickable" />
+
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/2.PNG"
+                Title="国务院印发《关于深入实施“人工智能+”行动的意见》"
+                Info="2025-08-26 17:00:13  |  新华社北京8月26日电 国务院日前印发《关于深入实施“人工智能+”行动的意见》（以下简称《意见》）。 《意见》坚持以习近平新时代中国特色社会主义思想为指导，完整准确全面贯彻新发展理念，坚持以人民为中心的发展思想，充分发挥我国数据资源丰富、产业体系完备、应用场景广阔等优势，强化前瞻谋划、系统布局、分业施策、..."
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826A06F2700"
+                Type="Clickable" />
+
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/3.PNG"
+                Title="“医保新政下退休人员每月500元返款”？官方：均为谣言"
+                Info="2025-08-26 16:50:16  |  8月26日辟谣：“医保新政下退休人员每月500元返款”相关信息系谣言详情：近日，有网民发布题为《医保新政下退休人员每月500元返款与门诊自费的经济学分析》的文章，声称“北京时间2025年8月初，国家医疗保障局联合财政部正式发布了《关于优化退休人员医疗保险待遇结构的实施方案》，对现行退休人员医保体系进行了重大调整”..."
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826A06BER00"
+                Type="Clickable" />
+
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/4.PNG"
+                Title="抗战影像记忆｜哪里燃烧，就去哪里拍摄"
+                Info="2025-08-26 10:42:10  |  这是一名普通的八路军战士1939年冬，高帆在自己创作的宣传画前留影。这也是一名普通的八路军战士徐肖冰参加“百团大战”时随八路军129师386旅16团攻克日军占据的正太铁路芦家庄车站时的留影。这还是一名普通的八路军战士1943年冬，石少华（左）在反扫荡中拍摄日军“三光政策”给中国人民带来的深重灾难。这些看似普通的身影..."
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826A034NQ00"
+                Type="Clickable" />
+
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/5.PNG"
+                Title="全家26人花96万坐熊猫专列，实际餐食与宣传不符？涉事旅行社回应"
+                Info="2025-08-26 17:00:16  |  极目新闻记者 张皓 见习记者 李淑仪8月25日，一位吉林网友发视频称，全家26人花费96万元乘坐了7月10日发车的“熊猫专列·安逸号”进疆旅游，但在行程中发现列车提供的实际餐食与四川某旅行社介绍的精美餐食不符。对此，成都某旅行社回应极目新闻记者称，视频中所展示的精美餐食实为列车发布会等场合使用的摆拍道具，并非旅..."
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826A06FA300"
+                Type="Clickable" />
+
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/6.PNG"
+                Title="广东一小区蛇患成灾！随处可见蛇踪迹，为什么这么多蛇出现在小区？没有办法根治吗？"
+                Info="2025-08-26 15:07:18  |  近日，广东浮云一小区 “蛇患”严重，随处可见蛇踪迹，对此物业回应：天热小区绿化好，目前没人被咬，已加装驱蛇布点器，也会加强巡逻。引发网友关注，为什么这么多蛇出现在小区？没有办法根治吗？ 
+腾讯新闻热问内行人答主、广东市政装饰、园林设计从业者“贵重物品DR” 表示，新闻中提到的小区位于广东省云浮市新兴县新城镇多宝路2号。卫星图显示该小区周围绿化很多，周边有河道，所在的新兴县新城镇整体的绿化基础较好。"
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826V05CU100"
+                Type="Clickable" />
+
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/7.PNG"
+                Title="中方提出严肃交涉：要求日方澄清"
+                Info="2025-08-26 15:37:27  |  8月26日，外交部发言人郭嘉昆主持例行记者会。问：据报道，24日，外交消息人士透露，对于9月3日将在北京举行的抗日战争胜利80周年纪念活动及阅兵仪式，日本政府已通过外交渠道呼吁欧洲及亚洲各国不要参加。日本通过驻外大使馆等向各国称，此次中国的活动过度聚焦历史、反日色彩浓重，呼吁各国谨慎考虑。中方对此有何评论？..."
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826A05LEI00"
+                Type="Clickable" />
+
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/8.PNG"
+                Title="首席科学家石京山被查，搞权色交易、赌博"
+                Info="2025-08-26 09:31:54  |  中央纪委国家监委网站8月25日发布援引贵州省纪委监委消息：经贵州省委批准，贵州省纪委监委对贵州省人大教育科学文化卫生委员会原委员（原遵义医学院党委书记）石京山严重违纪违法问题进行了立案审查调查。 经查，石京山丧失理想信念，背离初心使命，对抗组织审查；无视中央八项规定精神，接受可能影响公正执行公务的宴请；..."
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826A02DDR00"
+                Type="Clickable" />
+
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/9.PNG"
+                Title="一伦敦飞北京波音777紧急降落俄罗斯：发动机故障导致，机上311名乘客"
+                Info="2025-08-26 16:39:37  |  8月26日，中国国际航空一架伦敦飞北京的航班在俄罗斯下瓦尔托夫斯克机场紧急降落。这架波音777客机载有311名乘客，据报道，飞机的一台发动机发生故障。由于当地天气非常理想且机场跑道足够长，因此降落过程非常顺利。报道称由于当地无法修理该大型客机，国航已派出备用飞机及携带零件的技术人员。目前乘客已在飞机上等待数小时，机场方面表示乘客将被送往候机区等待。"
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826V0674M00"
+                Type="Clickable" />
+
+            <local:MyListItem
+                Margin="-5,2,-5,8"
+                Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/10.PNG"
+                Title="租下公立医院后，原副县长非法集资近7亿"
+                Info="2025-08-26 15:55:31  |  2002年，在辰溪县人民医院的经营“举步维艰”之际，曾担任该县政协副主席、副县长的商人滕树良接手了这个“烂摊子”，把医院“租”了下来，租期长达40年。然而，20年后，经营医院的滕树良却被指控非法吸收公众存款，牵涉至少400个家庭。辰溪县位于湖南省怀化市，曾系省级扶贫开发重点扶持县。多名受访者告诉中国新闻周刊，..."
+                EventType="打开网页"
+                EventData="https://view.inews.qq.com/a/20250826A05R3100"
+                Type="Clickable" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.qq.com/" />
+                </Grid>
+            </StackPanel>
+            <StackPanel Margin="0,2,10,8">
+                <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🆕 网易新闻" />
+                
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/1.PNG"
+            Title="纪委“内鬼”收受巨额财物 双开通报有罕见表述"
+            Info="2025-08-26 18:08:34  |  上观新闻"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7TI01MD055040N3.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/2.PNG"
+            Title="上海15岁女生军训倒地死亡 班主任接到电话马上挂了"
+            Info="2025-08-26 17:58:42  |  中国新闻周刊"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7THBEPU0514BE2Q.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/3.PNG"
+            Title="父子除夕夜放烟花引火灾致1死1伤 父亲被判7年赔270万"
+            Info="2025-08-26 20:21:58  |  红星新闻"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7TPK9H9051492T3.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/4.PNG"
+            Title="德总理访华前夕 一笔涉中企的德国关键订单突然“易主“"
+            Info="2025-08-26 20:20:25  |  澎湃新闻"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7TPHF3R0001899O.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/5.PNG"
+            Title="山东一对双胞胎兄弟高考同分，考入山东大学同一专业！一家五口都是“山大人”"
+            Info="2025-08-26 20:16:27  |  户外小阿隋"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7TPA6UG05566SD6.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/6.PNG"
+            Title="女子花2000多高价买7瓶“长高喷雾“ 成分却是普通凝胶"
+            Info="2025-08-26 18:08:03  |  大风新闻"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7THV38B05561G0D.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/7.PNG"
+            Title="泽连斯基称收到中国领导人的贺信 外交部回应"
+            Info="2025-08-26 20:00:18  |  外交部网站"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7TOCJTG0001899O.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/8.PNG"
+            Title="阿斯拉尼社媒告别：感谢所有支持我的人，国米将永远在我心中"
+            Info="2025-08-26 19:56:37  |  直播吧"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7TO5S4O0529AQIE.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/9.PNG"
+            Title="媒体：呼吁各国别出席“9·3“纪念活动 日本在害怕什么"
+            Info="2025-08-26 18:45:18  |  北京日报客户端"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7TK39SS0001899O.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="E:/001_我的网站&amp;app/Minecraft/PCL2-TodayHomepage/images/toutiao/10.PNG"
+            Title="莫兰德还不够！辽篮升级内线目标瞄准前上海刺头，他不比萨林杰差"
+            Info="2025-08-26 19:32:49  |  弄月公子"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K7TMQA3005299654.html"
+            Type="Clickable" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <local:MyButton Grid.Column="0" Margin="0,10,0,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://weibo.com/" />
+                </Grid>
+            </StackPanel>
+        </UniformGrid>
+    </StackPanel>
+</local:MyCard>
+
+<Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="100" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="📺 热门视频" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+</Grid>
+
+<local:MyCard Title="📺 热门视频" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <UniformGrid Columns="1" Margin="0,0,0,8"> 
+            <StackPanel Margin="0,2,10,8">
+                <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="📺 哔哩哔哩" />
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取哔哩哔哩失败</TextBlock>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.bilibili.com/v/popular/rank/all" />
+                </Grid>
+            </StackPanel>
+        </UniformGrid>
+    </StackPanel>
+</local:MyCard>
+
+<Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="100" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="📺 CCTV 新闻" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+</Grid>
+
+<local:MyCard Title="📰 CCTV 国内新闻" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p5.img.cctvpic.com/photoworkspace/2025/08/26/2025082619393874423.png" Title="遇见“上合”、“桥”见天津！上海合作组织天津峰会筹备工作基本就绪" Info="2025-08-26 19:43:16  |  2025年上海合作组织峰会将于8月31日至9月1日在天津举行，目前整体筹备工作基本就绪。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIpfEPwGUKvNqpi4zK05ch250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p4.img.cctvpic.com/photoworkspace/2025/08/26/2025082619215523404.jpg" Title="习近平会见俄罗斯国家杜马主席沃洛金" Info="2025-08-26 19:26:12  |  8月26日上午，国家主席习近平在北京人民大会堂会见俄罗斯国家杜马主席沃洛金。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIfkmISpbkKpAeaxmO5a7G250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p2.img.cctvpic.com/photoworkspace/2025/08/26/2025082619192812260.jpg" Title="习近平夫妇会见柬埔寨国王西哈莫尼和太后莫尼列" Info="2025-08-26 19:20:57  |  8月26日上午，国家主席习近平和夫人彭丽媛在中南海亲切会见柬埔寨国王西哈莫尼和太后莫尼列。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTI00Zc8xLNQbbxWhGS4ihg250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p4.img.cctvpic.com/photoworkspace/2025/08/26/2025082618401142366.jpg" Title="重温激昂旋律！《烽火战歌》今晚开播" Info="2025-08-26 18:45:01  |  重温烽火岁月，再唱激昂战歌。由中央广播电视总台推出的纪念中国人民抗日战争暨世界反法西斯战争胜利80周年特别节目《烽火战歌》将于8月26日起，在央视综合频道（CCTV-1）22:30档播出，央视频、央视网等平台同步播出。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTITDkqlXmwJXXLkKhEC1lU250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p1.img.cctvpic.com/photoworkspace/2025/08/26/2025082618150681476.jpg" Title="水利部和中国气象局联合发布橙色山洪灾害气象预警" Info="2025-08-26 18:12:50  |  水利部和中国气象局8月26日18时联合发布橙色山洪灾害气象预警。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIjsyUxzm2D18cy5udypxk250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p2.img.cctvpic.com/photoworkspace/2025/08/26/2025082618050837703.png" Title="从“打卡密度”转向“幸福浓度” “低耗游”新方式为文旅消费注入新动能" Info="2025-08-26 18:09:15  |  这个假期，一种被称为“低耗游”的旅行方式悄然走红。坐电梯爬山登顶，在水深不足半米处平缓式漂流，匀速下滑式蹦极……这是最近走红的“低耗旅游三件套”。在刺激、征服与“低耗”之间，不少游客选择了“重在尝试，舒服就行”，这种以最小的体力消耗换取最大的心理舒适的出游方式，也就是“低耗游”，正在成为出行游玩的新方式。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIbuqlDBxQJWJg0i3IJuni250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p5.img.cctvpic.com/photoworkspace/2025/08/26/2025082617420948984.jpg" Title="京津研发河北转化进行时（一）：一座车间里的产业协同创新" Info="2025-08-26 17:54:22  |  科技成果转化是衔接科技创新和产业发展的重要桥梁，是促进创新链和产业链无缝对接的关键所在。随着京津冀协同发展不断向广度深度拓展，三地成果转化不断深化，技术合同成交额逐年增长。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIxXxZpchzd5hOhDwaZ9jY250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p5.img.cctvpic.com/photoworkspace/2025/08/26/2025082617503739452.png" Title="数说“十四五”成就丨从海关数据看我国外贸高质量发展五年成绩单" Info="2025-08-26 17:54:08  |  从海关数据看我国外贸高质量发展五年成绩单"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTImT6JciYwUg4Qf8PriNNz250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p2.img.cctvpic.com/photoworkspace/2025/08/26/2025082617434813213.png" Title="特色产业绘就秋日好“丰”光 果蔬飘香激活乡村振兴“新引擎”" Info="2025-08-26 17:45:10  |  眼下，河南周口郸城县的5万多亩小辣椒迎来丰收，田间地头一片忙碌。近年来，当地持续推进辣椒产业向特色化、规模化、品牌化发展，助力群众增收致富。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIlp4DKv4Ma1VAfhBMpIZs250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p4.img.cctvpic.com/photoworkspace/2025/08/26/2025082617304324668.jpg" Title="国家防总针对京津冀启动防汛四级应急响应 派出两个工作组协助指导" Info="2025-08-26 17:31:38  |  据应急管理部消息，据气象部门预报，8月26日至28日，京津冀地区有较强降雨过程，其中，北京、天津以及河北中北部等局地有暴雨或大暴雨。根据《国家防汛抗旱应急预案》及有关规定，国家防汛抗旱总指挥部决定于8月26日17时针对京津冀启动防汛四级应急响应。国家防总办公室派出两个工作组分赴北京、河北一线协助指导防汛救灾工作。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIm9h1gCSsw54ATDxihM06250826.shtml" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="🌍 CCTV 国际新闻" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p1.img.cctvpic.com/photoworkspace/2025/08/26/2025082617531691524.jpg" Title="海外人士谈抗战｜专访：中国共产党是全民族抗战的中流砥柱——访古巴学者何塞·罗瓦伊纳" Info="2025-08-26 18:50:11  |  古巴国际政治研究中心高级研究员何塞·罗瓦伊纳日前在首都哈瓦那接受新华社记者专访时说，80年前中国人民战胜日本法西斯，中国共产党是全民族抗战的中流砥柱，在极其艰苦的环境中领导抗战取得胜利，“这令人深感震撼”。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTI9Xv5xLDlMAviF7zzamOT250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p1.img.cctvpic.com/photoworkspace/2025/08/26/2025082616550236674.jpg" Title="过火面积逾6万公顷 葡萄牙有记录以来最大林火受控" Info="2025-08-26 16:55:17  |  葡萄牙国家应急和民防局说，在该国中部地区延烧了11天的林火于24日得到控制，但25日仍有近千名消防员待命，以防止这起该国有记录以来规模最大的林火势头再起。这起林火过火面积达64451公顷。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIcC85dTNqkpANuhcMOATE250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p4.img.cctvpic.com/photoworkspace/2025/08/26/2025082616523455333.jpg" Title="时间已定！8月27日零时起，美国将对印度征50%关税" Info="2025-08-26 16:52:43  |  据彭博社报道，当地时间8月25日，美国国土安全部发布预告通知，拟自8月27日零时起对印度商品加征50%关税。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIZZ9LRsbmjeJDkNzlNPv6250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p3.img.cctvpic.com/photoworkspace/2025/08/26/2025082616513741311.jpg" Title="失去动力 故障邮轮终抵达意大利那不勒斯港" Info="2025-08-26 16:52:25  |  地中海邮轮公司旗下“欧罗巴”号邮轮25日在意大利蓬扎岛附近海域发生故障，失去动力，之后依靠部分恢复的推进系统于当晚抵达那不勒斯港。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTInXhE2Z6M0gObX2iHz0SZ250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p4.img.cctvpic.com/photoworkspace/2025/08/26/2025082616201698459.jpg" Title="韩国首尔新增日间无人驾驶公交车线路" Info="2025-08-26 16:20:23  |  韩国首都首尔定于9月晚些时候正式推出一条日间无人驾驶公交车线路，现阶段正在试运行。首尔近年不断尝试将无人驾驶技术应用于公交车领域，例如新增一些凌晨时段无人驾驶公交车线路，以应对司机短缺等问题。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIj8xJVXmgV1NO0Zph2dOO250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p5.img.cctvpic.com/photoworkspace/2025/08/26/2025082615081478418.jpg" Title="关联巴以局势 挪威主权财富基金从一批美以企业撤资" Info="2025-08-26 15:08:35  |  挪威主权财富基金25日宣布，出于道德等方面的考虑，撤回对一家美国企业和五家以色列金融机构的投资。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIhaXrj4wcjCx6oNPSCPqM250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p1.img.cctvpic.com/photoworkspace/2025/08/26/2025082614373325786.jpg" Title="特朗普开始对美联储下手" Info="2025-08-26 14:37:53  |  美国总统特朗普25日晚宣布，因美联储理事莉萨·库克涉嫌“房贷欺诈”，他已经将她解职。库克曾表示，特朗普正在推进的贸易政策可能会抑制美国生产力，并可能迫使美联储在一个效率下降的经济环境中提高利率，以遏制通胀。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTI60uGteLeLRyNZn4PLP5Z250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p2.img.cctvpic.com/photoworkspace/2025/08/26/2025082614213657880.jpg" Title="坦桑尼亚桑给巴尔总统向中国援桑医疗队授勋" Info="2025-08-26 14:21:47  |  坦桑尼亚桑给巴尔总统姆维尼25日在桑给巴尔总统府接见第34期中国（江苏）援桑给巴尔医疗队，向全体队员授勋、颁发奖章及纪念证书，以表彰他们对桑医疗卫生事业作出的贡献。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTI9TiZV9etoSEJTcS6NP6k250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p2.img.cctvpic.com/photoworkspace/2025/08/26/2025082612540257800.jpg" Title="金建希以身体不适拒绝出席检方27日传唤调查" Info="2025-08-26 12:54:29  |  当地时间8月26日，韩国前总统尹锡悦夫人金建希向特检组提交不出席传唤调查事由书，称身体状况不佳，无法出席定于27日上午进行的传唤调查。12日深夜，韩国首尔中央地方法院签发对金建希的拘捕令，金建希随即被首尔南部拘留所拘押。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIYy1qailnCjkzTrHogUCU250826.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p1.img.cctvpic.com/photoworkspace/2025/08/26/2025082611095099381.jpg" Title="为全球绿色发展作出“上合贡献”" Info="2025-08-26 11:25:55  |  近年来，中国同其他上合组织成员国加强绿色发展领域交流合作，助力各国经济社会可持续发展，促进人与自然和谐共生。上合组织正以实际行动，将绿色发展的共识转化为具体成果，为全球绿色发展作出“上合贡献”。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/26/ARTIXXVxjPcpqiVhWr8VEpBC250826.shtml" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
