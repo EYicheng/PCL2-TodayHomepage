@@ -14,7 +14,7 @@ QQ_URL = "https://r.inews.qq.com/gw/event/hot_ranking_list?page_size=20"
 WY_URL = "https://m.163.com/fe/api/hot/news/flow"
 WEIBO_URL = "https://m.weibo.cn/api/container/getIndex?containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Drealtimehot&title=%E5%BE%AE%E5%8D%9A%E7%83%AD%E6%90%9C&extparam=filter_type%3Drealtimehot%26mi_cid%3D100103%26pos%3D0_0%26c_type%3D30%26display_time%3D1540538388&luicode=10000011&lfid=231583"
 BILIBILI_URL = "https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all"
-NOWPATH = "E:/001_我的网站&app/Minecraft/PCL2-TodayHomepage/"
+NOWPATH = "https://pcl.wyc-w.top/"
 today_str = datetime.date.today().isoformat()
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.2739.42",
@@ -434,7 +434,7 @@ def main():
     version_str = datetime.datetime.now().strftime("%Y%m%d-%H%M")
         
     # 写入 version 文件
-    with open('version', 'w', encoding='utf-8') as f:
+    with open('Custom.xaml.ini', 'w', encoding='utf-8') as f:
         f.write(version_str)
     print(f"✅ 已更新 version: {version_str}")
 
