@@ -29,7 +29,7 @@ jobs:
         env:
           Token: ${{ secrets.Token }}
         run: |
-          main.py
+          python main.py
 
       - name: Commit and push changes
         run: |
