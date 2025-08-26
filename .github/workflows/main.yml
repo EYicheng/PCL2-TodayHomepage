@@ -1,0 +1,45 @@
+name: Deploy XAML Homepage
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # 每30分钟运行一次
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main  # 替换为你的主分支名称
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Python script
+        run: |
+          python your_script.py  # 替换为你的Python脚本文件名（如main.py）
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add Custom.xaml version
+          git commit -m "Auto deploy at $(date +'%Y-%m-%d %H:%M:%S')"
+          git push origin main  # 替换为你的主分支名称
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # 生成的文件所在目录
+          commit_message: "Auto deploy at $(date +'%Y-%m-%d %H:%M:%S')"
