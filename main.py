@@ -436,7 +436,7 @@ def main():
     # 写入 version 文件
     with open('Custom.xaml.ini', 'w', encoding='utf-8') as f:
         f.write(version_str)
-    print(f"✅ 已更新 version: {version_str}")
+    print(f"✅ 已更新 Custom.xaml.ini: {version_str}")
 
 
 if __name__ == "__main__":
