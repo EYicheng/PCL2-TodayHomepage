@@ -5,3 +5,10 @@ compatibility_date = "2025-01-01"
 [[kv_namespaces]]
 binding = "ACCESS_COUNTER"
 id = "3f41d3827ef045a3b7edff690727cba2"
+
+# wrangler.toml (wrangler v3.88.0^)
+[observability.logs]
+enabled = true
+
+
+
