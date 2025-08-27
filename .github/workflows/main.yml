@@ -32,8 +32,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
+          git config --global user.name "EYiChengs-Robot"
+          git config --global user.email "228854223+EYiChengs-Robot@users.noreply.github.com"
           git add Custom.xaml Custom.xaml.ini
           # 如果没有变化，不报错
           git diff --cached --quiet || git commit -m "Auto update: $(date +'%Y-%m-%d %H:%M:%S')"

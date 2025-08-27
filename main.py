@@ -7,7 +7,7 @@ import os
 TOKEN = os.environ.get("Token")
 CHINA_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/china/latest/news?token={TOKEN}"
 WORLD_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/world/latest/news?token={TOKEN}"
-HOLIDAY_URL = f"https://api.istero.com/resource/v1/check/holiday?token={TOKEN}&date={datetime.date.today().isoformat()}"
+HOLIDAY_URL = f"https://api.istero.com/resource/v1/check/holiday?token={TOKEN}&date={datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat()}"
 TODAY_INTHEHISTORY_URL = f"https://api.istero.com/resource/v1/history/today?token={TOKEN}"
 TOUTIAO_URL = "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
 QQ_URL = "https://r.inews.qq.com/gw/event/hot_ranking_list?page_size=20"
@@ -290,9 +290,9 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     holiday_text = ""
     if holiday_data and holiday_data.get("code") == 200:
         name = holiday_data["data"].get("name", "法定节假日")
-        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now().strftime("%Y年%m月%d日")}，是 {name}！</TextBlock>'
+        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%年%月%d日")}，是 {name}！</TextBlock>'
     elif holiday_data and holiday_data.get("code") == 400:
-        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now().strftime("%Y年%m月%d日")}，不是法定节假日。</TextBlock>'
+        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%年%月%d日")}，不是法定节假日。</TextBlock>'
     else:
         holiday_text = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">无法获取节假日信息</TextBlock>'
 
@@ -309,7 +309,7 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     <StackPanel Margin="25,40,23,15">
 {holiday_text}
         <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" FontSize="11" Foreground="#888">
-            更新时间: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+            更新时间: {datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S")}
         </TextBlock>
         <local:MyIconTextButton Margin="-15,10,0,0" Height="35" HorizontalAlignment="Left"
                     Text="刷新主页" EventType="刷新主页" Grid.Column="1"
@@ -431,7 +431,7 @@ def main():
     generate_xaml(toutiao_news, nend_news, wb, wy, bilibili, china_news, world_news, holiday_info, history)
 
     # 生成版本号：YYYYMMDD-HHMM（24小时制）
-    version_str = datetime.datetime.now().strftime("%Y%m%d-%H%M")
+    version_str = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S")
         
     # 写入 version 文件
     with open('Custom.xaml.ini', 'w', encoding='utf-8') as f:
