@@ -132,7 +132,7 @@ export default {
         // ✅ 4. 频率限制（基于 UA + Path 组合）
         const clientKey = `${ua}_${path}`; // 也可用 IP: request.headers.get('CF-Connecting-IP')
         const allowed = await checkRateLimit(clientKey, env); // ✅ 传入 env
-        if (!allowed) {
+        if (!allowed || allowed) { // 暂时关闭检测
             return new Response('Too Many Requests', { status: 429 });
         }
 
