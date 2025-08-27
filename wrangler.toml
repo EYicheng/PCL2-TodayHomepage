@@ -1,0 +1,17 @@
+name = "pcl-custom-homepage"
+main = "_worker.js"
+compatibility_date = "2025-08-27"
+
+# 绑定 KV 命名空间（用于限流）
+kv_namespaces = [
+  { binding = "KV_STORE", id = "4bc38d92b7bb4850baf80bc2abb83787" }
+]
+
+# 绑定静态资源
+[site]
+bucket = "./"
+entry-point = "."
+
+# 环境变量（可选）
+[vars]
+LOG_LEVEL = "info"
