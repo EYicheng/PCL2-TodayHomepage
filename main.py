@@ -402,9 +402,9 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     </StackPanel>
 </local:MyCard>
 '''
-    with open("Custom.xaml", "w", encoding="utf-8") as f:
+    with open("index.xaml", "w", encoding="utf-8") as f:
         f.write(xaml_content)
-    print("✅ Custom.xaml 文件已生成！")
+    print("✅ index.xaml 文件已生成！")
 
 def main():
     print("📡 正在获取新闻与节假日信息...")
@@ -434,9 +434,9 @@ def main():
     version_str = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S")
         
     # 写入 version 文件
-    with open('Custom.xaml.ini', 'w', encoding='utf-8') as f:
+    with open('index.xaml.ini', 'w', encoding='utf-8') as f:
         f.write(version_str)
-    print(f"✅ 已更新 Custom.xaml.ini: {version_str}")
+    print(f"✅ 已更新 index.xaml.ini: {version_str}")
 
 
 if __name__ == "__main__":
