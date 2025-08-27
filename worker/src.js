@@ -12,8 +12,10 @@
 const ALLOWED_REFERRERS = [
     'http://.pcl2.server/',
     'http://.open.pcl2.server/',
+    'http://.pcl2.open.server/',
     'https://.pcl2.server/',
-    'https://.open.pcl2.server/'
+    'https://.open.pcl2.server/',
+    'https://.pcl2.open.server/'
 ];
 
 // UA 必须包含 PCL2/
