@@ -2,7 +2,7 @@ name: Generate XAML File
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # 每30分钟
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.COMMIT_PAT }}  # ✅ 官方推荐：用 PAT 获得写权限
+          token: ${{ secrets.COMMIT_PAT }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
