@@ -290,9 +290,9 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     holiday_text = ""
     if holiday_data and holiday_data.get("code") == 200:
         name = holiday_data["data"].get("name", "法定节假日")
-        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%年%月%d日")}，是 {name}！</TextBlock>'
+        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y年%m月%d日")}，是 {name}！</TextBlock>'
     elif holiday_data and holiday_data.get("code") == 400:
-        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%年%月%d日")}，不是法定节假日。</TextBlock>'
+        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y年%m月%d日")}，不是法定节假日。</TextBlock>'
     else:
         holiday_text = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">无法获取节假日信息</TextBlock>'
 
