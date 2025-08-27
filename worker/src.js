@@ -1,14 +1,3 @@
-/**
- * PCL2 主页代理 Worker
- * 功能：
- * - 仅允许 .xaml 和 .ini 文件
- * - 检查 UA 必须包含 'PCL2/'
- * - 检查 Referer 是否合法
- * - 频率限制：每分钟最多 2 次，每小时最多 10 次
- * - 代理到 Cloudflare Pages
- */
-
-// 允许的 Referer 域名（模糊匹配用）
 const ALLOWED_REFERRERS = [
     'http://.pcl2.server/',
     'http://.open.pcl2.server/',
@@ -18,10 +7,9 @@ const ALLOWED_REFERRERS = [
     'https://.pcl2.open.server/'
 ];
 
-// UA 必须包含 PCL2/
+
 const isValidUA = (ua) => ua && ua.includes('PCL2/');
 
-// Referer 是否合法（模糊匹配）
 const isValidReferer = (referer) => {
     if (!referer) return false;
     return ALLOWED_REFERRERS.some(domain => {
@@ -59,7 +47,6 @@ async function getCounter(key, env) {
 async function incrementCounter(key, timestamp, env) {
     let { counter, timestamps } = await getCounter(key, env);
     timestamps.push(timestamp);
-    // 只保留最近 20 次记录（防止数组过大）
     timestamps = timestamps.slice(-20);
     await env.ACCESS_COUNTER.put(key, JSON.stringify({ counter: counter + 1, timestamps }));
 }
@@ -111,7 +98,7 @@ export default {
         const url = new URL(request.url);
         const path = url.pathname;
 
-        // ✅ 1. 只允许访问 .xaml 和 .xaml.ini 文件
+        // 只允许访问 .xaml 和 .xaml.ini 文件
         if (!path.endsWith('.xaml') && !path.endsWith('.xaml.ini')) {
             return new Response('Not Found', { status: 404 });
         }
@@ -119,31 +106,31 @@ export default {
         const ua = request.headers.get('User-Agent');
         const referer = request.headers.get('Referer') || '';
 
-        // ✅ 2. UA 检查
+        // UA 检查
         if (!isValidUA(ua)) {
             return new Response('Forbidden: Invalid User-Agent', { status: 403 });
         }
 
-        // ✅ 3. Referer 检查（可选，但推荐）
+        // Referer 检查（可选，但推荐）
         if (!isValidReferer(referer)) {
             return new Response('Forbidden: Invalid Referer', { status: 403 });
         }
 
-        // ✅ 4. 频率限制（基于 UA + Path 组合）
+        // 频率限制（基于 UA + Path 组合）
         const clientKey = `${ua}_${path}`; // 也可用 IP: request.headers.get('CF-Connecting-IP')
-        const allowed = await checkRateLimit(clientKey, env); // ✅ 传入 env
+        const allowed = await checkRateLimit(clientKey, env); // 传入 env
         if (!(!allowed || allowed)) { // 暂时关闭检测
             return new Response('Too Many Requests', { status: 429 });
         }
 
-        // ✅ 5. 代理请求到 Pages
+        // 代理请求到 Pages
         const response = await fetchFromPages(path);
 
         if (!response.ok) {
             return new Response('Content Not Found', { status: 404 });
         }
 
-        // ✅ 返回响应，设置正确 Content-Type
+        // 返回响应，设置正确 Content-Type
         return new Response(response.body, {
             status: response.status,
             headers: {
