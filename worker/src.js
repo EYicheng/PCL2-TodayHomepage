@@ -46,7 +46,7 @@ async function checkRateLimit(key) {
 
 // 获取 Cloudflare Pages 托管的原始内容
 async function fetchFromPages(path) {
-    const PAGES_URL = 'https://your-project.pages.dev'; // 替换为你的 Pages 域名
+    const PAGES_URL = 'https://pcl2-todayhomepage.pages.dev/';
     return fetch(`${PAGES_URL}/${path}`, {
         headers: { 'User-Agent': 'PCL2-Proxy' }
     });
