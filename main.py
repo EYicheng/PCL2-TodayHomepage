@@ -337,7 +337,7 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
 
 <local:MyCard Title="🔥 新闻热点" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
     <StackPanel Margin="25,40,23,15">
-        <UniformGrid Columns="3" Margin="0,0,0,8"> 
+        <UniformGrid Columns="2" Margin="0,0,0,8"> 
             <StackPanel Margin="0,2,10,8">
                 <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🔥 头条热榜" />
                 {toutionews_items}
@@ -358,6 +358,13 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
                     <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.qq.com/" />
                 </Grid>
             </StackPanel>
+        </UniformGrid>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="🔥" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <UniformGrid Columns="1" Margin="0,0,0,8"> 
             <StackPanel Margin="0,2,10,8">
                 <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🆕 网易新闻" />
                 {wy_it}
