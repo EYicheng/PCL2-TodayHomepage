@@ -339,6 +339,16 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     <StackPanel Margin="25,40,23,15">
         <UniformGrid Columns="2" Margin="0,0,0,8"> 
             <StackPanel Margin="0,2,10,8">
+                <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🆕 网易新闻" />
+                {wy_it}
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <local:MyButton Grid.Column="0" Margin="0,10,0,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.163.com/" />
+                </Grid>
+            </StackPanel>
+            <StackPanel Margin="0,2,10,8">
                 <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🔥 头条热榜" />
                 {toutionews_items}
                 <Grid>
@@ -348,6 +358,13 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
                     <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.toutiao.com/" />
                 </Grid>
             </StackPanel>
+        </UniformGrid>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="🔥 新闻热点" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <UniformGrid Columns="1" Margin="0,0,0,8"> 
             <StackPanel Margin="0,2,10,8">
                 <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🐧 腾讯新闻" />
                 {nend_items}
@@ -356,23 +373,6 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
                             <ColumnDefinition Width="1*" />
                     </Grid.ColumnDefinitions>
                     <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.qq.com/" />
-                </Grid>
-            </StackPanel>
-        </UniformGrid>
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="🔥" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
-    <StackPanel Margin="25,40,23,15">
-        <UniformGrid Columns="1" Margin="0,0,0,8"> 
-            <StackPanel Margin="0,2,10,8">
-                <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🆕 网易新闻" />
-                {wy_it}
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*" />
-                    </Grid.ColumnDefinitions>
-                    <local:MyButton Grid.Column="0" Margin="0,10,0,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.163.com/" />
                 </Grid>
             </StackPanel>
         </UniformGrid>
