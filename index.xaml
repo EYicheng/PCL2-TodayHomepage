@@ -4,7 +4,7 @@
     <StackPanel Margin="25,40,23,15">
 <TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是2025年08月28日，不是法定节假日。</TextBlock>
         <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" FontSize="11" Foreground="#888">
-            更新时间: 2025-08-28 14:48:32
+            更新时间: 2025-08-28 14:57:03
         </TextBlock>
         <local:MyIconTextButton Margin="-15,10,0,0" Height="35" HorizontalAlignment="Left"
                     Text="刷新主页" EventType="刷新主页" Grid.Column="1"
@@ -13,94 +13,7 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="📖 历史上的今天" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
-    <StackPanel Margin="25,40,23,15">
 
-        <UniformGrid Columns="2" Margin="0,0,0,8">
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="罗马帝国末期的基督教思想家奥古斯丁去世" 
-                Info="430年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=罗马帝国末期的基督教思想家奥古斯丁去世" 
-                Type="Clickable" />
-            
-
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="契丹皇帝耶律宗真逝世" 
-                Info="1055年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=契丹皇帝耶律宗真逝世" 
-                Type="Clickable" />
-
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="明光宗朱常洛出生" 
-                Info="1582年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=明光宗朱常洛出生" 
-                Type="Clickable" />
-
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="国际法的创造者格老秀斯逝世" 
-                Info="1645年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=国际法的创造者格老秀斯逝世" 
-                Type="Clickable" />
-
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="德国诗人歌德出生" 
-                Info="1749年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=德国诗人歌德出生" 
-                Type="Clickable" />
-
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="清朝政治人物及军事家明亮逝世" 
-                Info="1822年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=清朝政治人物及军事家明亮逝世" 
-                Type="Clickable" />
-
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="英国著名的地质学家威廉·史密斯逝世" 
-                Info="1839年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=英国著名的地质学家威廉·史密斯逝世" 
-                Type="Clickable" />
-
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="诺贝尔生理医学奖得主乔治·惠普尔出生" 
-                Info="1878年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=诺贝尔生理医学奖得主乔治·惠普尔出生" 
-                Type="Clickable" />
-
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="理论物理学家周培源出生" 
-                Info="1902年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=理论物理学家周培源出生" 
-                Type="Clickable" />
-
-            <local:MyListItem 
-                Margin="0,2,10,8"
-                Title="加拿大第26任总理保罗·马丁出生" 
-                Info="1938年08月28日"
-                EventType="打开网页" 
-                EventData="https://cn.bing.com/search?q=加拿大第26任总理保罗·马丁出生" 
-                Type="Clickable" />
-        </UniformGrid>
-            
-    </StackPanel>
-</local:MyCard>
 
 <Grid Margin="0,0,0,8">
      <Grid.ColumnDefinitions>
@@ -127,25 +40,25 @@
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/1.PNG"
             Title="外交部回应金正恩将出席九三阅兵"
-            Info="🔥43371056"
+            Info="🔥43925707"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7542604358975176746/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542604358975176746%22%2C%22hot_board_impr_id%22%3A%22202508281447083C0686525A585B3F9C5E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%96%E4%BA%A4%E9%83%A8%E5%9B%9E%E5%BA%94%E9%87%91%E6%AD%A3%E6%81%A9%E5%B0%86%E5%87%BA%E5%B8%AD%E4%B9%9D%E4%B8%89%E9%98%85%E5%85%B5%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542604358975176746"
+            EventData="https://www.toutiao.com/trending/7542604358975176746/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542604358975176746%22%2C%22hot_board_impr_id%22%3A%2220250828145649836A45F62FF4D5543CFB%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A4%96%E4%BA%A4%E9%83%A8%E5%9B%9E%E5%BA%94%E9%87%91%E6%AD%A3%E6%81%A9%E5%B0%86%E5%87%BA%E5%B8%AD%E4%B9%9D%E4%B8%89%E9%98%85%E5%85%B5%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542604358975176746"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
             Title="男子找回2岁走失女儿狠扇自己耳光"
-            Info="🔥39243754"
+            Info="🔥39745623"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7542896568274567204/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542896568274567204%22%2C%22hot_board_impr_id%22%3A%22202508281447083C0686525A585B3F9C5E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%94%B7%E5%AD%90%E6%89%BE%E5%9B%9E2%E5%B2%81%E8%B5%B0%E5%A4%B1%E5%A5%B3%E5%84%BF%E7%8B%A0%E6%89%87%E8%87%AA%E5%B7%B1%E8%80%B3%E5%85%89%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542896568274567204"
+            EventData="https://www.toutiao.com/trending/7542896568274567204/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542896568274567204%22%2C%22hot_board_impr_id%22%3A%2220250828145649836A45F62FF4D5543CFB%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%94%B7%E5%AD%90%E6%89%BE%E5%9B%9E2%E5%B2%81%E8%B5%B0%E5%A4%B1%E5%A5%B3%E5%84%BF%E7%8B%A0%E6%89%87%E8%87%AA%E5%B7%B1%E8%80%B3%E5%85%89%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542896568274567204"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
             Title="9个细节提前解码阅兵"
-            Info="🔥35509217"
+            Info="🔥35963327"
             EventType="打开网页"
             EventData="https://www.toutiao.com/article/7543426416160064034"
             Type="Clickable" />
@@ -153,64 +66,64 @@
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
-            Title="金正恩来北京看阅兵意味着什么"
-            Info="🔥32130068"
+            Title="参加抗战纪念活动外方嘉宾全名单"
+            Info="🔥32540964"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543481759510302262/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543481759510302262%22%2C%22hot_board_impr_id%22%3A%22202508281447083C0686525A585B3F9C5E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%87%91%E6%AD%A3%E6%81%A9%E6%9D%A5%E5%8C%97%E4%BA%AC%E7%9C%8B%E9%98%85%E5%85%B5%E6%84%8F%E5%91%B3%E7%9D%80%E4%BB%80%E4%B9%88%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543481759510302262"
+            EventData="https://www.toutiao.com/trending/7543461011803357226/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543461011803357226%22%2C%22hot_board_impr_id%22%3A%2220250828145649836A45F62FF4D5543CFB%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8F%82%E5%8A%A0%E6%8A%97%E6%88%98%E7%BA%AA%E5%BF%B5%E6%B4%BB%E5%8A%A8%E5%A4%96%E6%96%B9%E5%98%89%E5%AE%BE%E5%85%A8%E5%90%8D%E5%8D%95%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543461011803357226"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/5.PNG"
-            Title="女子因酒店早餐不让外带捏毁20颗蛋"
-            Info="🔥29072488"
+            Title="中国抗战阅兵以来日本砸560亿搞公关"
+            Info="🔥29444282"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543300686541455411/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543300686541455411%22%2C%22hot_board_impr_id%22%3A%22202508281447083C0686525A585B3F9C5E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A5%B3%E5%AD%90%E5%9B%A0%E9%85%92%E5%BA%97%E6%97%A9%E9%A4%90%E4%B8%8D%E8%AE%A9%E5%A4%96%E5%B8%A6%E6%8D%8F%E6%AF%8120%E9%A2%97%E8%9B%8B%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543300686541455411"
+            EventData="https://www.toutiao.com/trending/7543035430099845171/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543035430099845171%22%2C%22hot_board_impr_id%22%3A%2220250828145649836A45F62FF4D5543CFB%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E6%8A%97%E6%88%98%E9%98%85%E5%85%B5%E4%BB%A5%E6%9D%A5%E6%97%A5%E6%9C%AC%E7%A0%B8560%E4%BA%BF%E6%90%9E%E5%85%AC%E5%85%B3%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543035430099845171"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/6.PNG"
-            Title="群众可到临时观礼台现场看阅兵"
-            Info="🔥26305875"
+            Title="女子因酒店早餐不让外带捏毁20颗蛋"
+            Info="🔥26642288"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543492700788624905/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543492700788624905%22%2C%22hot_board_impr_id%22%3A%22202508281447083C0686525A585B3F9C5E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%A4%E4%BC%97%E5%8F%AF%E5%88%B0%E4%B8%B4%E6%97%B6%E8%A7%82%E7%A4%BC%E5%8F%B0%E7%8E%B0%E5%9C%BA%E7%9C%8B%E9%98%85%E5%85%B5%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543492700788624905"
+            EventData="https://www.toutiao.com/trending/7543300686541455411/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543300686541455411%22%2C%22hot_board_impr_id%22%3A%2220250828145649836A45F62FF4D5543CFB%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%A5%B3%E5%AD%90%E5%9B%A0%E9%85%92%E5%BA%97%E6%97%A9%E9%A4%90%E4%B8%8D%E8%AE%A9%E5%A4%96%E5%B8%A6%E6%8D%8F%E6%AF%8120%E9%A2%97%E8%9B%8B%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543300686541455411"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-            Title="普京和金正恩等将出席九三阅兵"
-            Info="🔥23802540"
+            Title="南京大学回应33岁女教师离世"
+            Info="🔥24106939"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543451483275952147/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543451483275952147%22%2C%22hot_board_impr_id%22%3A%22202508281447083C0686525A585B3F9C5E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%E5%92%8C%E9%87%91%E6%AD%A3%E6%81%A9%E7%AD%89%E5%B0%86%E5%87%BA%E5%B8%AD%E4%B9%9D%E4%B8%89%E9%98%85%E5%85%B5%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543451483275952147"
+            EventData="https://www.toutiao.com/trending/7543427795071090729/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543427795071090729%22%2C%22hot_board_impr_id%22%3A%2220250828145649836A45F62FF4D5543CFB%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%9B%9E%E5%BA%9433%E5%B2%81%E5%A5%B3%E6%95%99%E5%B8%88%E7%A6%BB%E4%B8%96%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543427795071090729"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/8.PNG"
-            Title="南京大学回应33岁女教师离世"
-            Info="🔥21537429"
+            Title="普京和金正恩等将出席九三阅兵"
+            Info="🔥21812860"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543427795071090729/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543427795071090729%22%2C%22hot_board_impr_id%22%3A%22202508281447083C0686525A585B3F9C5E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8D%97%E4%BA%AC%E5%A4%A7%E5%AD%A6%E5%9B%9E%E5%BA%9433%E5%B2%81%E5%A5%B3%E6%95%99%E5%B8%88%E7%A6%BB%E4%B8%96%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543427795071090729"
+            EventData="https://www.toutiao.com/trending/7543451483275952147/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543451483275952147%22%2C%22hot_board_impr_id%22%3A%2220250828145649836A45F62FF4D5543CFB%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%99%AE%E4%BA%AC%E5%92%8C%E9%87%91%E6%AD%A3%E6%81%A9%E7%AD%89%E5%B0%86%E5%87%BA%E5%B8%AD%E4%B9%9D%E4%B8%89%E9%98%85%E5%85%B5%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543451483275952147"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/9.PNG"
-            Title="佩通坦在录音案宣判前罕见公开露面"
-            Info="🔥19487871"
+            Title="群众可到临时观礼台现场看阅兵"
+            Info="🔥19737092"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7542485820176252955/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542485820176252955%22%2C%22hot_board_impr_id%22%3A%22202508281447083C0686525A585B3F9C5E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BD%A9%E9%80%9A%E5%9D%A6%E5%9C%A8%E5%BD%95%E9%9F%B3%E6%A1%88%E5%AE%A3%E5%88%A4%E5%89%8D%E7%BD%95%E8%A7%81%E5%85%AC%E5%BC%80%E9%9C%B2%E9%9D%A2%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542485820176252955"
+            EventData="https://www.toutiao.com/trending/7543492700788624905/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543492700788624905%22%2C%22hot_board_impr_id%22%3A%2220250828145649836A45F62FF4D5543CFB%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%A4%E4%BC%97%E5%8F%AF%E5%88%B0%E4%B8%B4%E6%97%B6%E8%A7%82%E7%A4%BC%E5%8F%B0%E7%8E%B0%E5%9C%BA%E7%9C%8B%E9%98%85%E5%85%B5%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543492700788624905"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
             Title="江苏3名夜骑者遭闷杀？2人造谣被罚"
-            Info="🔥17633355"
+            Info="🔥17858860"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7542869401935413274/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542869401935413274%22%2C%22hot_board_impr_id%22%3A%22202508281447083C0686525A585B3F9C5E%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B1%9F%E8%8B%8F3%E5%90%8D%E5%A4%9C%E9%AA%91%E8%80%85%E9%81%AD%E9%97%B7%E6%9D%80%EF%BC%9F2%E4%BA%BA%E9%80%A0%E8%B0%A3%E8%A2%AB%E7%BD%9A%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542869401935413274"
+            EventData="https://www.toutiao.com/trending/7542869401935413274/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227542869401935413274%22%2C%22hot_board_impr_id%22%3A%2220250828145649836A45F62FF4D5543CFB%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B1%9F%E8%8B%8F3%E5%90%8D%E5%A4%9C%E9%AA%91%E8%80%85%E9%81%AD%E9%97%B7%E6%9D%80%EF%BC%9F2%E4%BA%BA%E9%80%A0%E8%B0%A3%E8%A2%AB%E7%BD%9A%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7542869401935413274"
             Type="Clickable" />
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -279,10 +192,10 @@
             <local:MyListItem
                 Margin="-5,2,-5,8"
                 Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-                Title="大妈私坐20万元摩托致车侧翻，赔1000元拉黑车主，4S店：修好约2万元"
-                Info="2025-08-28 07:35:26  |  极目新闻记者 肖名远近日，一位大妈在四川阿坝旅游时，坐到路边其他游客的摩托车上拍照，不料将车碰倒，摩托车受损，她赔了1000元，但车主称维修费约需2万元。目前，车主称他联系不上大妈，只好起诉维权。8月27日，维修该摩托的4S店告诉记者，该车是近20万元的进口车，维修费确实要2万元左右。8月25日，来自山西的摩友尹先..."
+                Title="26位外国国家元首和政府首脑将出席中国人民抗日战争暨世界反法西斯战争胜利80周年纪念活动"
+                Info="2025-08-28 10:38:12  |  中新网8月28日电 中国人民抗日战争暨世界反法西斯战争胜利80周年纪念活动新闻中心于28日举办中国人民抗日战争暨世界反法西斯战争胜利80周年纪念活动第一场记者招待会。 外交部部长助理洪磊在会上介绍，应中国国家主席习近平邀请，26位外国国家元首和政府首脑将出席纪念活动，他们是：俄罗斯总统普京，朝鲜劳动党总书记、国..."
                 EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250827A08B8600"
+                EventData="https://view.inews.qq.com/a/20250828A034QK00"
                 Type="Clickable" />
 
             <local:MyListItem
@@ -306,10 +219,10 @@
             <local:MyListItem
                 Margin="-5,2,-5,8"
                 Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
-                Title="26位外国国家元首和政府首脑将出席中国人民抗日战争暨世界反法西斯战争胜利80周年纪念活动"
-                Info="2025-08-28 10:38:12  |  中新网8月28日电 中国人民抗日战争暨世界反法西斯战争胜利80周年纪念活动新闻中心于28日举办中国人民抗日战争暨世界反法西斯战争胜利80周年纪念活动第一场记者招待会。 外交部部长助理洪磊在会上介绍，应中国国家主席习近平邀请，26位外国国家元首和政府首脑将出席纪念活动，他们是：俄罗斯总统普京，朝鲜劳动党总书记、国..."
+                Title="大妈私坐20万元摩托致车侧翻，赔1000元拉黑车主，4S店：修好约2万元"
+                Info="2025-08-28 07:35:26  |  极目新闻记者 肖名远近日，一位大妈在四川阿坝旅游时，坐到路边其他游客的摩托车上拍照，不料将车碰倒，摩托车受损，她赔了1000元，但车主称维修费约需2万元。目前，车主称他联系不上大妈，只好起诉维权。8月27日，维修该摩托的4S店告诉记者，该车是近20万元的进口车，维修费确实要2万元左右。8月25日，来自山西的摩友尹先..."
                 EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250828A034QK00"
+                EventData="https://view.inews.qq.com/a/20250827A08B8600"
                 Type="Clickable" />
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -324,24 +237,6 @@
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/1.PNG"
-            Title="印度“雄心勃勃“能源计划被日媒泼冷水：对手可是中国"
-            Info="2025-08-28 14:17:22  |  澎湃新闻"
-            EventType="打开网页"
-            EventData="https://m.163.com/news/article/K829I50Q0001899O.html"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
-            Title="一言不合！女子称被不知名男同事砸头毁容"
-            Info="2025-08-28 14:15:43  |  新浪财经"
-            EventType="打开网页"
-            EventData="https://m.163.com/news/article/K829F3MP05568W0A.html"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
             Title="美媒：面对特朗普 欧盟终于体会到“中国鸦片战争之辱“"
             Info="2025-08-28 14:08:44  |  澎湃新闻"
             EventType="打开网页"
@@ -350,65 +245,83 @@
 
         <local:MyListItem
             Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
-            Title="PhysicalAI极佳视界完成两轮数亿元融资"
-            Info="2025-08-28 14:00:39  |  新浪财经"
+            Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
+            Title="正式转投上海男篮！张镇麟为了自己的家庭，告别辽宁男篮！"
+            Info="2025-08-28 14:39:51  |  德译洋洋"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K828JHHG05568W0A.html"
+            EventData="https://m.163.com/news/article/K82ARA9H0529AQJO.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
+            Title="2架无人机在400多米高“风洞“对撞 管理方:9年坠95架"
+            Info="2025-08-28 10:49:48  |  纵相新闻"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K81TM2RV05503FCU.html"
+            Type="Clickable" />
+
+        <local:MyListItem
+            Margin="-5,2,-5,8"
+            Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
+            Title="确定！湖人又刮彩票，2米13中锋加盟，三进宫+为NBA梦倒贴50万"
+            Info="2025-08-28 14:29:08  |  球童无忌"
+            EventType="打开网页"
+            EventData="https://m.163.com/news/article/K82A7MFH0552PQUA.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/5.PNG"
-            Title="记者：因东契奇广告牌离独行侠主场太近，独行侠勒令移走海报"
-            Info="2025-08-28 14:00:22  |  懂球帝"
+            Title="被丈夫捅杀女子曾转发杀妻新闻给丈夫：我不想上新闻"
+            Info="2025-08-27 23:15:47  |  FM93浙江交通之声"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K828J0F20549BAP0.html"
+            EventData="https://m.163.com/news/article/K80LV9S305149FJ6.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/6.PNG"
-            Title="中国女游客遭韩国民宿房东深夜闯入骚扰 受害人事后立即报警，韩国律师：警方已立案"
-            Info="2025-08-28 13:58:52  |  红星新闻"
+            Title="特斯拉预告本周五将推新车 或为新款Model Y高性能版"
+            Info="2025-08-28 14:18:06  |  TechWeb"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K828G88U051492T3.html"
+            EventData="https://m.163.com/news/article/K829JFD905119MAU.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-            Title="沪上老牌医院今开业重启运营！历经3次搬迁后入驻黄金地段"
-            Info="2025-08-28 13:58:35  |  上观新闻"
+            Title="印度被泼冷水：对手可是中国"
+            Info="2025-08-28 14:17:22  |  澎湃新闻"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K828FNTO055040N3.html"
+            EventData="https://m.163.com/news/article/K829I50Q0001899O.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/8.PNG"
-            Title="销售同时和2人“姐弟恋“诈骗千万 1人报案后仍叫他老公"
-            Info="2025-08-26 22:36:01  |  看看新闻Knews"
+            Title="一言不合！女子称被不知名男同事砸头毁容"
+            Info="2025-08-28 14:15:43  |  新浪财经"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K7U19OF50514EGPO.html"
+            EventData="https://m.163.com/news/article/K829F3MP05568W0A.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/9.PNG"
-            Title="年轻教师因开学产生焦虑"
-            Info="2025-08-28 13:40:04  |  大象新闻"
+            Title="女子称251万存款“消失“ 警方发现被多名老人分次取走"
+            Info="2025-08-27 18:19:15  |  环球网资讯"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K827DQLF0550B6IS.html"
+            EventData="https://m.163.com/news/article/K8050AGO0514R9OJ.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
-            Title="徐杰+胡明轩+崔永熙+焦泊乔，你给广东男篮新赛季阵容打几分？"
-            Info="2025-08-28 13:32:27  |  雷速体育"
+            Title="媒体人：北京、北控都很想要赵睿，但新疆第一意愿是将其留下"
+            Info="2025-08-28 14:11:15  |  懂球帝"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K826VT2E0529DS7F.html"
+            EventData="https://m.163.com/news/article/K8296U370549BAP0.html"
             Type="Clickable" />
                 <Grid>
                     <Grid.ColumnDefinitions>
