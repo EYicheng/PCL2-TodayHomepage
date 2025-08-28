@@ -297,11 +297,11 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
         holiday_text = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">无法获取节假日信息</TextBlock>'
 
     # 历史上的今天
-    history_text = ""
-    if history_data and history_data.get("code") == 200:
-        history_text = history_items(history_data["data"][:10])
-    else:
-        history_text = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">无法获取历史上的今天</TextBlock>'
+    # history_text = ""
+    # if history_data and history_data.get("code") == 200:
+    #     history_text = history_items(history_data["data"][:10])
+    # else:
+    #     history_text = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">无法获取历史上的今天</TextBlock>'
 
     xaml_content = f'''
 <!-- 这是 PCL 的主页自定义文件。由 Python 脚本自动生成 -->
@@ -318,11 +318,7 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="📖 历史上的今天" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
-    <StackPanel Margin="25,40,23,15">
-{history_text}
-    </StackPanel>
-</local:MyCard>
+
 
 <Grid Margin="0,0,0,8">
      <Grid.ColumnDefinitions>
@@ -425,8 +421,8 @@ def main():
     world_news = fetch_data(WORLD_NEWS_URL)
     time.sleep(1)
     holiday_info = fetch_data(HOLIDAY_URL)
-    time.sleep(1)
-    history = fetch_data(TODAY_INTHEHISTORY_URL)
+    # time.sleep(1)
+    # history = fetch_data(TODAY_INTHEHISTORY_URL)
 
     generate_xaml(toutiao_news, nend_news, wb, wy, bilibili, china_news, world_news, holiday_info, history)
 
@@ -472,4 +468,11 @@ if __name__ == "__main__":
             </StackPanel>
         </UniformGrid>
     </StackPanel>
-</local:MyCard>'''
+</local:MyCard>
+
+<local:MyCard Title="📖 历史上的今天" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+{history_text}
+    </StackPanel>
+</local:MyCard>
+'''
