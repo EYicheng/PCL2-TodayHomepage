@@ -423,6 +423,7 @@ def main():
     holiday_info = fetch_data(HOLIDAY_URL)
     # time.sleep(1)
     # history = fetch_data(TODAY_INTHEHISTORY_URL)
+    history = "0"
 
     generate_xaml(toutiao_news, nend_news, wb, wy, bilibili, china_news, world_news, holiday_info, history)
 
