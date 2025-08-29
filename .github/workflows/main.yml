@@ -1,8 +1,8 @@
 name: Generate XAML File
-
+# 先让自动的停一下 🚫 正在维护中，请稍后再试
 on:
-  schedule:
-    - cron: "*/30 * * * *"
+#   schedule:
+#     - cron: "*/30 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -23,6 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install requests
+          pip install chinesecalendar
 
       - name: Run main.py
         env:
