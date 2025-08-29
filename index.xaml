@@ -4,7 +4,7 @@
     <StackPanel Margin="25,40,23,15">
 <TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是2025年08月29日，不是法定节假日。</TextBlock>
         <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" FontSize="11" Foreground="#888">
-            更新时间: 2025-08-29 15:34:40
+            更新时间: 2025-08-29 16:16:41
         </TextBlock>
         <local:MyIconTextButton Margin="-15,10,0,0" Height="35" HorizontalAlignment="Left"
                     Text="刷新主页" EventType="刷新主页" Grid.Column="1"
@@ -39,91 +39,91 @@
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/1.PNG"
-            Title="正式确定！CBA王牌后卫完成转会，离开辽宁男篮，携手廖三宁"
-            Info="2025-08-29 14:57:14  |  体坛瞎白话"
+            Title="费内巴切官宣！穆里尼奥下课，职业生涯第7次，欧冠附加赛出局"
+            Info="2025-08-29 15:55:50  |  奥拜尔"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K84U7RB60529CTQM.html"
+            EventData="https://m.163.com/news/article/K851J57J0552LYH5.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
-            Title="LV龙虾造型手袋售价55500元 网友：实在欣赏不来"
-            Info="2025-08-29 15:08:56  |  极目新闻"
+            Title="美国参议院军事委员会主席抵达台北 外交部：强烈不满"
+            Info="2025-08-29 15:52:35  |  澎湃新闻"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K84UT90C053469LG.html"
+            EventData="https://m.163.com/news/article/K851D6ND0514R9P4.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
-            Title="收评：A股8月收官！创业板指月涨超24% 沪指站上3800点创10年新高"
-            Info="2025-08-29 15:04:26  |  网易财经"
+            Title="赛里木湖七夕再迎领证高峰：新人提前一天搭帐篷通宵排队领号，当天300个号已发完"
+            Info="2025-08-29 15:51:57  |  极目新闻"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K84UL0UR00258105.html"
+            EventData="https://m.163.com/news/article/K851C149053469LG.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
-            Title="部分新型装备将在九三阅兵首次亮相 CNN：机会难得"
-            Info="2025-08-29 14:37:24  |  上观新闻"
+            Title="遭费内巴切解雇！穆里尼奥生涯第7次下课"
+            Info="2025-08-29 15:50:53  |  直播吧"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K84T3GVL055040N3.html"
+            EventData="https://m.163.com/news/article/K851A2JC0529AQIE.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/5.PNG"
-            Title="本田宣布将全球总部迁至东京八重洲地区"
-            Info="2025-08-29 14:58:57  |  界面新闻"
+            Title="日本干涉九三阅兵 介文汲：让中国人认清日本野心不死"
+            Info="2025-08-29 15:40:37  |  看看新闻Knews"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K84UB06U0534A4SC.html"
+            EventData="https://m.163.com/news/article/K850N99D0514EGPO.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/6.PNG"
-            Title="九三阅兵名单几乎没有西方发达国家领导人 媒体分析"
-            Info="2025-08-29 11:05:32  |  新民晚报"
+            Title="510瓶茅台酒将被拍卖起拍价99.7万：包括8瓶30年茅台"
+            Info="2025-08-29 13:59:38  |  大风新闻"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K84GVJFH0512DU6N.html"
+            EventData="https://m.163.com/news/article/K84QUCP805561G0D.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-            Title="男子驾车被落石砸中身亡 妻子：吃面制品发酵测出酒驾"
-            Info="2025-08-29 08:27:35  |  极目新闻"
+            Title="首个阻扰93阅兵的国家出现，拒绝向中国道歉，还派军机监视中方"
+            Info="2025-08-27 23:55:13  |  历史有些冷"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K847UCR0053469LG.html"
+            EventData="https://m.163.com/news/article/K80O7G6R0516FI5I.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/8.PNG"
-            Title="媒体：九三阅兵观礼名单中 有人出乎意料有人后悔没来"
-            Info="2025-08-28 23:49:01  |  看看新闻Knews"
+            Title="六个症状不断出现，十有八九是恶性肿瘤，最好去检查一下！"
+            Info="2025-08-29 15:27:50  |  泠泠说史"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K83A8R8D0514EGPO.html"
+            EventData="https://m.163.com/news/article/K84VVSIL05568PGU.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/9.PNG"
-            Title="房文军假冒“驻联合国外交官“行事高调 有女友和大别墅"
-            Info="2025-08-28 19:21:51  |  中国新闻周刊"
+            Title="上汽名爵公布半固态电池版MG4售价：10.28万元"
+            Info="2025-08-29 15:15:42  |  界面新闻"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K82QVLAH0514BE2Q.html"
+            EventData="https://m.163.com/news/article/K84V9LTB0534A4SC.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
-            Title="法国归还斩首的马达加斯加国王头颅 后者将被重新安葬"
-            Info="2025-08-28 17:05:03  |  鲁中晨报"
+            Title="中国九三阅兵将至，日本正式对全球通告：砸560亿投向国际舆论场"
+            Info="2025-08-29 15:11:51  |  一个有灵魂的作者"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/K82J56550530JPVV.html"
+            EventData="https://m.163.com/news/article/K84V2JKD054679X8.html"
             Type="Clickable" />
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -138,26 +138,26 @@
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/1.PNG"
-            Title="佩通坦能重登泰国总理宝座吗"
-            Info="🔥73709782"
+            Title="马英九：赖清德应向台湾人民郑重道歉"
+            Info="🔥75357512"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543873448653622830/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543873448653622830%22%2C%22hot_board_impr_id%22%3A%2220250829153425391F9A8E31FEEE9ED424%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BD%A9%E9%80%9A%E5%9D%A6%E8%83%BD%E9%87%8D%E7%99%BB%E6%B3%B0%E5%9B%BD%E6%80%BB%E7%90%86%E5%AE%9D%E5%BA%A7%E5%90%97%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543873448653622830"
+            EventData="https://www.toutiao.com/trending/7543888040847117834/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543888040847117834%22%2C%22hot_board_impr_id%22%3A%222025082916141392954524B2A37CDBF62D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%A9%AC%E8%8B%B1%E4%B9%9D%EF%BC%9A%E8%B5%96%E6%B8%85%E5%BE%B7%E5%BA%94%E5%90%91%E5%8F%B0%E6%B9%BE%E4%BA%BA%E6%B0%91%E9%83%91%E9%87%8D%E9%81%93%E6%AD%89%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543888040847117834"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
-            Title="马英九：赖清德应向台湾人民郑重道歉"
-            Info="🔥66695369"
+            Title="上海试点电动自行车超速抓拍"
+            Info="🔥68186297"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543888040847117834/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543888040847117834%22%2C%22hot_board_impr_id%22%3A%2220250829153425391F9A8E31FEEE9ED424%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%A9%AC%E8%8B%B1%E4%B9%9D%EF%BC%9A%E8%B5%96%E6%B8%85%E5%BE%B7%E5%BA%94%E5%90%91%E5%8F%B0%E6%B9%BE%E4%BA%BA%E6%B0%91%E9%83%91%E9%87%8D%E9%81%93%E6%AD%89%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543888040847117834"
+            EventData="https://www.toutiao.com/trending/7543238686297702454/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2212%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543238686297702454%22%2C%22hot_board_impr_id%22%3A%222025082916141392954524B2A37CDBF62D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%8A%E6%B5%B7%E8%AF%95%E7%82%B9%E7%94%B5%E5%8A%A8%E8%87%AA%E8%A1%8C%E8%BD%A6%E8%B6%85%E9%80%9F%E6%8A%93%E6%8B%8D%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543238686297702454"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
             Title="九三阅兵倒计时！这个“预告”必看"
-            Info="🔥60348465"
+            Info="🔥61697512"
             EventType="打开网页"
             EventData="https://www.toutiao.com/article/7543783200519143936"
             Type="Clickable" />
@@ -166,63 +166,63 @@
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
             Title="中国必将统一的大势不可阻挡"
-            Info="🔥54605549"
+            Info="🔥55826218"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543401087148261415/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543401087148261415%22%2C%22hot_board_impr_id%22%3A%2220250829153425391F9A8E31FEEE9ED424%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E5%BF%85%E5%B0%86%E7%BB%9F%E4%B8%80%E7%9A%84%E5%A4%A7%E5%8A%BF%E4%B8%8D%E5%8F%AF%E9%98%BB%E6%8C%A1%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543401087148261415"
+            EventData="https://www.toutiao.com/trending/7543401087148261415/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543401087148261415%22%2C%22hot_board_impr_id%22%3A%222025082916141392954524B2A37CDBF62D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%B8%AD%E5%9B%BD%E5%BF%85%E5%B0%86%E7%BB%9F%E4%B8%80%E7%9A%84%E5%A4%A7%E5%8A%BF%E4%B8%8D%E5%8F%AF%E9%98%BB%E6%8C%A1%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543401087148261415"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/5.PNG"
-            Title="回顾历年阅兵式首个接受检阅阵列"
-            Info="🔥49409144"
+            Title="阅兵观礼名单公布 缺席者谁会后悔"
+            Info="🔥50513651"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543781041018965513/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543781041018965513%22%2C%22hot_board_impr_id%22%3A%2220250829153425391F9A8E31FEEE9ED424%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%9B%9E%E9%A1%BE%E5%8E%86%E5%B9%B4%E9%98%85%E5%85%B5%E5%BC%8F%E9%A6%96%E4%B8%AA%E6%8E%A5%E5%8F%97%E6%A3%80%E9%98%85%E9%98%B5%E5%88%97%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543781041018965513"
+            EventData="https://www.toutiao.com/trending/7543772542708895282/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543772542708895282%22%2C%22hot_board_impr_id%22%3A%222025082916141392954524B2A37CDBF62D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%98%85%E5%85%B5%E8%A7%82%E7%A4%BC%E5%90%8D%E5%8D%95%E5%85%AC%E5%B8%83+%E7%BC%BA%E5%B8%AD%E8%80%85%E8%B0%81%E4%BC%9A%E5%90%8E%E6%82%94%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543772542708895282"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/6.PNG"
             Title="网警提醒：七夕浪漫需警惕"
-            Info="🔥44707242"
+            Info="🔥45706641"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543095995748384810/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543095995748384810%22%2C%22hot_board_impr_id%22%3A%2220250829153425391F9A8E31FEEE9ED424%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BD%91%E8%AD%A6%E6%8F%90%E9%86%92%EF%BC%9A%E4%B8%83%E5%A4%95%E6%B5%AA%E6%BC%AB%E9%9C%80%E8%AD%A6%E6%83%95%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543095995748384810"
+            EventData="https://www.toutiao.com/trending/7543095995748384810/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543095995748384810%22%2C%22hot_board_impr_id%22%3A%222025082916141392954524B2A37CDBF62D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BD%91%E8%AD%A6%E6%8F%90%E9%86%92%EF%BC%9A%E4%B8%83%E5%A4%95%E6%B5%AA%E6%BC%AB%E9%9C%80%E8%AD%A6%E6%83%95%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543095995748384810"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-            Title="俄军猛轰基辅 乌方为何要中方表态"
-            Info="🔥40452786"
+            Title="美国会议员窜台 外交部：强烈不满"
+            Info="🔥41357079"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543819467097116187/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543819467097116187%22%2C%22hot_board_impr_id%22%3A%2220250829153425391F9A8E31FEEE9ED424%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BF%84%E5%86%9B%E7%8C%9B%E8%BD%B0%E5%9F%BA%E8%BE%85+%E4%B9%8C%E6%96%B9%E4%B8%BA%E4%BD%95%E8%A6%81%E4%B8%AD%E6%96%B9%E8%A1%A8%E6%80%81%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543819467097116187"
+            EventData="https://www.toutiao.com/trending/7543913029553884711/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%225%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543913029553884711%22%2C%22hot_board_impr_id%22%3A%222025082916141392954524B2A37CDBF62D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E7%BE%8E%E5%9B%BD%E4%BC%9A%E8%AE%AE%E5%91%98%E7%AA%9C%E5%8F%B0+%E5%A4%96%E4%BA%A4%E9%83%A8%EF%BC%9A%E5%BC%BA%E7%83%88%E4%B8%8D%E6%BB%A1%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543913029553884711"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/8.PNG"
-            Title="阅兵观礼名单公布 缺席者谁会后悔"
-            Info="🔥36603194"
+            Title="回顾历年阅兵式首个接受检阅阵列"
+            Info="🔥37421433"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543772542708895282/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543772542708895282%22%2C%22hot_board_impr_id%22%3A%2220250829153425391F9A8E31FEEE9ED424%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%98%85%E5%85%B5%E8%A7%82%E7%A4%BC%E5%90%8D%E5%8D%95%E5%85%AC%E5%B8%83+%E7%BC%BA%E5%B8%AD%E8%80%85%E8%B0%81%E4%BC%9A%E5%90%8E%E6%82%94%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543772542708895282"
+            EventData="https://www.toutiao.com/trending/7543781041018965513/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%221%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543781041018965513%22%2C%22hot_board_impr_id%22%3A%222025082916141392954524B2A37CDBF62D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%9B%9E%E9%A1%BE%E5%8E%86%E5%B9%B4%E9%98%85%E5%85%B5%E5%BC%8F%E9%A6%96%E4%B8%AA%E6%8E%A5%E5%8F%97%E6%A3%80%E9%98%85%E9%98%B5%E5%88%97%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543781041018965513"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/9.PNG"
-            Title="裁决在即佩通坦命运如何"
-            Info="🔥33119940"
+            Title="赵睿加盟北京首钢男篮"
+            Info="🔥33860313"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543524522717118507/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543524522717118507%22%2C%22hot_board_impr_id%22%3A%2220250829153425391F9A8E31FEEE9ED424%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%A3%81%E5%86%B3%E5%9C%A8%E5%8D%B3%E4%BD%A9%E9%80%9A%E5%9D%A6%E5%91%BD%E8%BF%90%E5%A6%82%E4%BD%95%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543524522717118507"
+            EventData="https://www.toutiao.com/trending/7543908612452945435/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543908612452945435%22%2C%22hot_board_impr_id%22%3A%222025082916141392954524B2A37CDBF62D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%B5%B5%E7%9D%BF%E5%8A%A0%E7%9B%9F%E5%8C%97%E4%BA%AC%E9%A6%96%E9%92%A2%E7%94%B7%E7%AF%AE%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543908612452945435"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
-            Title="你愿意为了治愈感花钱吗"
-            Info="🔥29968161"
+            Title="菲海警仁爱礁补给梦再度破灭说明啥"
+            Info="🔥30638078"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7543835095577136683/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2210%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543835095577136683%22%2C%22hot_board_impr_id%22%3A%2220250829153425391F9A8E31FEEE9ED424%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BD%A0%E6%84%BF%E6%84%8F%E4%B8%BA%E4%BA%86%E6%B2%BB%E6%84%88%E6%84%9F%E8%8A%B1%E9%92%B1%E5%90%97%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543835095577136683"
+            EventData="https://www.toutiao.com/trending/7543868912870362667/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227543868912870362667%22%2C%22hot_board_impr_id%22%3A%222025082916141392954524B2A37CDBF62D%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E8%8F%B2%E6%B5%B7%E8%AD%A6%E4%BB%81%E7%88%B1%E7%A4%81%E8%A1%A5%E7%BB%99%E6%A2%A6%E5%86%8D%E5%BA%A6%E7%A0%B4%E7%81%AD%E8%AF%B4%E6%98%8E%E5%95%A5%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7543868912870362667"
             Type="Clickable" />
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -240,96 +240,7 @@
         <UniformGrid Columns="1" Margin="0,0,0,8"> 
             <StackPanel Margin="0,2,10,8">
                 <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🐧 腾讯新闻" />
-                
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/1.PNG"
-                Title="新思想引领新征程丨弘扬伟大抗战精神 汇聚民族复兴力量"
-                Info="2025-08-28 19:52:39  |  习近平总书记指出，“伟大的抗战精神，是中国人民弥足珍贵的精神财富，将永远激励中国人民克服一切艰难险阻、为实现中华民族伟大复兴而奋斗”。在强国建设、民族复兴的新征程上，14亿多中华儿女铭记历史，缅怀先烈，弘扬伟大抗战精神，以坚如磐石的决心、只争朝夕的劲头、坚忍不拔的毅力，向着中华民族伟大复兴砥砺奋进。九..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250828A083NO00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
-                Title="外交部：中国终将统一也必将统一的大势不可阻挡"
-                Info="2025-08-29 10:41:39  |  今天上午，中国人民抗日战争暨世界反法西斯战争胜利80周年纪念活动新闻中心举办第二场记者招待会，介绍坚持和平发展、推动构建人类命运共同体有关情况，并回答记者提问。外交部副部长马朝旭重申，台湾问题纯属中国内政，不容任何外来干涉，少数外部势力妄图搞“以台制华”是在玩火，而玩火者必自焚。中国终将统一，也必将统..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250829A037GB00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
-                Title="半夜收到备注“我的最后一餐”，老板吓得报警让民警送！开门后学生说：明天要开学了"
-                Info="2025-08-29 13:35:10  |  8月21日凌晨，安徽休宁县公安局海阳派出所接报警电话，一商家称接到订单上备注“今天是我的最后一餐，明天我就要报道了……”怀疑订单人意欲轻生。民警接到报警后立刻前往查看，结果发现是两个学生第二天要上学报道了，这“最后一餐”是对美好假期结束的调侃。虽是乌龙，民警还是为外卖商家的警觉性点赞：宁可乌龙，也不愿..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250829A04P2O00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
-                Title="九三阅兵倒计时！这个“预告”必看"
-                Info="2025-08-29 07:31:13  |  “大好河山，寸土不让！”抗战期间先辈们抱定必死的决心用生命守护每一寸山河今年9月3日是中国人民抗日战争胜利80周年纪念日胜利日倒计时之际新华社向你发出邀请：一起用镜头定格祖国的大好河山以山河影像为信告慰在抗战中牺牲的英烈登陆新华社微信、微博、抖音、快手、视频号、B站账号一起在评论区“寄”出“致英烈的山河..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250829A01LUL00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/5.PNG"
-                Title="九三阅兵观礼名单公布 谁在同行谁会后悔"
-                Info="2025-08-28 23:04:11  |  "
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250828V098G900"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/6.PNG"
-                Title="李连杰讲述病情：颈部发现肿块，最终决定切除，即使不是良性的也要面对"
-                Info="2025-08-29 10:52:08  |  8月28日，著名影星李连杰晒视频回应此前“硬件返厂维修”，讲述病情及手术情况。李连杰称在4月26日生日时无意中照镜子，发现脖颈部位有肿块，摸上去硬硬的，吃了一周消炎药发现情况不对，在医生建议下，一边工作一边先后做了B超、CT和穿刺活检，基本确定是良性，但有些东西看不清，最终在8月份决定动手术，经切片化验确定百..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250829A038R500"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-                Title="中央文件定调！新一轮城市竞争，开始了"
-                Info="2025-08-29 11:42:53  |  文|凯风城市发展，迎来时代之变。中办、国办印发《关于推动城市高质量发展的意见》，擘画了未来城市发展的路线图。根据文件，稳妥有序推动城市群一体化和都市圈同城化发展，增强超大特大城市综合竞争力，提高中小城市和县城承载能力。此前召开的城市工作会议首提“两个转向”：城镇化从“快速增长”转向“稳定发展”，城市..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250828A097H600"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/8.PNG"
-                Title="纪念抗战胜利80周年"
-                Info="未知时间  |  "
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/UTR2025073008310200"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/9.PNG"
-                Title="外交部：愿同美方相向而行，继续探寻新时期两个大国正确相处之道"
-                Info="2025-08-29 10:45:28  |  今天上午，中国人民抗日战争暨世界反法西斯战争胜利80周年纪念活动新闻中心举办第二场记者招待会，介绍坚持和平发展、推动构建人类命运共同体有关情况，并回答记者提问。外交部副部长马朝旭介绍，我们愿同美国相互尊重、和平共处、合作共赢，同时坚定维护中国的国家主权、安全和发展利益。对中国搞施压、胁迫行不通、办不到..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250829A03BS700"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
-                Title="中办、国办：支持老旧住房自主更新、原拆原建"
-                Info="2025-08-29 07:49:25  |  《中共中央 国务院关于推动城市高质量发展的意见》对外公布。意见提到，系统推进“好房子”和完整社区建设。加快构建房地产发展新模式，更好满足群众刚性和多样化改善性住房需求。全链条提升住房设计、建造、维护、服务水平，大力推进安全、舒适、绿色、智慧的“好房子”建设。实施物业服务质量提升行动。稳步推进城中村和..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20250828A07SB500"
-                Type="Clickable" />
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取今日新闻失败</TextBlock>
                 <Grid>
                     <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
@@ -359,6 +270,26 @@
     <StackPanel Margin="25,40,23,15">
 
         <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p5.img.cctvpic.com/photoworkspace/2025/08/29/2025082915251223917.jpg" Title="创新“置顶” 向“新”而行 透过三个关键词看外贸大省如何逆风“破题”" Info="2025-08-29 15:45:32  |  外贸是浙江经济增长的重要引擎之一，今年以来，国际贸易形势复杂多变，特别是4月份美国滥施关税，让浙江面临着一波“压力测试”。数据显示，今年前七个月，浙江对美出口占全省比重下降1.9个百分点，拖累全省出口0.7个百分点。压力之下，浙江交出了一份亮眼的外贸答卷。今年前七个月出口规模超过2万亿元，增速好于全国水平，出口增长贡献率也位居全国前列。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIYp7r0QwUp2hX9Ih1QAZX250829.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p3.img.cctvpic.com/photoworkspace/2025/08/29/2025082915112740300.png" Title="“人工智能+”成为新消费“加速器” 赋能多元场景 打造健康安全好生活" Info="2025-08-29 15:12:30  |  日前，我国首部AI领域的纲领性文件发布，系统布局“人工智能+”的六大重点行动和八大基础支撑。行动意见提出，要加快推动新应用场景落地。记者在走访中发现，从服务表演到家庭陪伴，机器人正在成为推动新消费模式的关键力量。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTI1dfgBT2esFcEbMRbSICn250829.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p2.img.cctvpic.com/photoworkspace/2025/08/29/2025082914510367487.jpg" Title="天津，“上合时间”绽放“津”彩" Info="2025-08-29 15:02:00  |  2025年上合组织天津峰会将是上合组织成立以来规模最大的一次峰会。天津，这座设卫筑城600多年、被河海滋养的城市，将见证上合组织团结互信、凝聚共识的重要时刻。接下来，我们就跟随记者行走天津，一起去感受它兼具历史底蕴与现代活力的城市韵味。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIMPvrPdsxBLhC2IXVMDJ2250829.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p2.img.cctvpic.com/photoworkspace/2025/08/29/2025082914571551148.jpg" Title="九三阅兵倒计时！这个“预告”必看" Info="2025-08-29 15:00:43  |  一起用镜头定格祖国的大好河山。以山河影像为信，告慰在抗战中牺牲的英烈。山河已无恙，你们看见了吗？"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIGGDwY5VyrUOc9A9SXWxb250829.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://p3.img.cctvpic.com/photoworkspace/2025/08/29/2025082914562811087.png" Title="国家发展改革委将加快治理部分领域无序竞争 加快建设全国统一大市场" Info="2025-08-29 14:56:55  |  国家发展改革委8月29日召开新闻发布会，新闻发言人表示，下半年，国家发展改革委将紧盯重点领域重点任务，加快建设全国统一大市场，加快治理部分领域的无序竞争。"
+                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTImhQefkrql5tkO5pF4J2D250829.shtml" Type="Clickable" />
+
+        <local:MyListItem  Margin="-5,2,-5,8"
                     Logo="https://p2.img.cctvpic.com/photoworkspace/2025/08/29/2025082914472195434.png" Title="套餐、鲜花、金饰迎来热销 传统节日七夕催热“浪漫经济”" Info="2025-08-29 14:48:06  |  8月29日是农历七月初七，是中国传统节日“七夕”。在湖北武汉，不少餐厅推出了特别活动，吸引年轻人前去打卡，解锁浪漫体验。"
                     EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIegBpXMcglKAeD1k8oqeN250829.shtml" Type="Clickable" />
 
@@ -367,7 +298,7 @@
                     EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIWEZMFKSCnfyJtBIHB9Eo250829.shtml" Type="Clickable" />
 
         <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://p5.img.cctvpic.com/photoworkspace/2025/08/29/2025082914503568479.jpg" Title="网约车监管信息交互系统7月份共收到订单信息7.87亿单 环比增长4%" Info="2025-08-29 14:43:39  |  据网约车监管信息交互系统监测，截至2025年7月31日，全国共有392家网约车平台公司取得网约车平台经营许可，环比增加3家。网约车监管信息交互系统7月份共收到订单信息7.87亿单，环比增长4%。"
+                    Logo="https://p3.img.cctvpic.com/photoworkspace/2025/08/29/2025082915180089144.jpg" Title="滇川甘辽吉等地13条河流发生超警洪水" Info="2025-08-29 14:43:39  |  8月28日8时至29日8时，四川中北部和南部、辽宁东部、吉林东南部、云南西北部、广西南部、广东雷州半岛等地降了大到暴雨，其中四川成都阿坝德阳绵阳、广东湛江等地局部降了大暴雨。"
                     EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIYr6ppX06S2JZEydmuOQA250829.shtml" Type="Clickable" />
 
         <local:MyListItem  Margin="-5,2,-5,8"
@@ -377,26 +308,6 @@
         <local:MyListItem  Margin="-5,2,-5,8"
                     Logo="https://p1.img.cctvpic.com/photoworkspace/2025/08/29/2025082914072121031.png" Title="纪念活动新闻中心第二场记者招待会有何“干货”？一文快速了解→" Info="2025-08-29 14:07:59  |  8月29日上午，中国人民抗日战争暨世界反法西斯战争胜利80周年纪念活动新闻中心举行第二场记者招待会。外交部副部长马朝旭介绍坚持和平发展、推动构建人类命运共同体有关情况。马朝旭介绍，在中方同各方携手努力下，构建人类命运共同体已经从中国倡议扩大为国际共识，取得全方位、开创性的丰硕成果。"
                     EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTILyqg36Lv58aF22T6hFSh250829.shtml" Type="Clickable" />
-
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://p5.img.cctvpic.com/photoworkspace/2025/08/29/2025082913365155721.jpg" Title="驻华大使看上合 | 白俄罗斯驻华大使：平等、尊重、共识是上合的独特之处" Info="2025-08-29 13:55:50  |  去年7月，白俄罗斯成为上海合作组织第十个成员国。白俄罗斯高度重视上合合作，是“上海精神”的坚定支持者和践行者。对于中方轮值主席国工作，白俄罗斯驻华大使切尔维亚科夫给予最高评价。他表示，即将举行的天津峰会意义重大，将为上合组织发展注入强劲动力。"
-                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIUYNZy1WduUfLN9vkqY19250829.shtml" Type="Clickable" />
-
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://p3.img.cctvpic.com/photoworkspace/2025/08/29/2025082913424693707.jpg" Title="南方多地高温持续“在线” 暖心举措为劳动者送清凉保民生" Info="2025-08-29 13:51:51  |  处暑已过，南方不少地方的高温仍未退去。面对依旧“在线”的暑热，浙江各地积极应对，以不同的方式送出清凉、保障民生。"
-                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIruC51mUf9EyvEd3W3cuC250829.shtml" Type="Clickable" />
-
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://p4.img.cctvpic.com/photoworkspace/2025/08/29/2025082912340762636.jpg" Title="学习卡丨这些关键词读懂上海合作组织峰会" Info="2025-08-29 12:35:44  |  上合组织为何拥有如此大的凝聚力和吸引力？本次天津峰会为何备受瞩目？这些关键词了解。"
-                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIMS8QFnhuUHSW2V0alxfC250829.shtml" Type="Clickable" />
-
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://p1.img.cctvpic.com/photoworkspace/2025/08/29/2025082912262081754.jpg" Title="育儿补贴可以申领啦！怎么申？去哪领？一文了解↓" Info="2025-08-29 12:27:16  |  《育儿补贴制度实施方案》今年7月正式发布，制度明确，从今年（2025年）1月1日起，无论一孩、二孩、三孩，每年均可领取3600元补贴，直至年满3周岁。育儿补贴如何申请呢？记者从国家卫生健康委了解到，申领分线上和线下进行。目前线上的第三方平台支付宝和微信端申领入口都已经启动了试运行，一起了解一下不同入口的申领流程。"
-                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTInu3GEQcOeHGhZjAHlUYQ250829.shtml" Type="Clickable" />
-
-        <local:MyListItem  Margin="-5,2,-5,8"
-                    Logo="https://p1.img.cctvpic.com/photoworkspace/2025/08/29/2025082912213920951.png" Title="数“说”民营企业500强整体规模持续提升 经营效益持续向好" Info="2025-08-29 12:22:41  |  8月28日，全国工商联在辽宁沈阳发布 “2025中国民营企业500强榜单”，榜单由2024年营收前500名的民营企业构成。统计显示，民营企业500强整体规模持续提升，经营效益持续向好。"
-                    EventType="打开网页" EventData="https://news.cctv.com/2025/08/29/ARTIrHK0nOo7fg7xF9cyDqcc250829.shtml" Type="Clickable" />
     </StackPanel>
 </local:MyCard>
 
