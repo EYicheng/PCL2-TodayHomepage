@@ -3,19 +3,20 @@ import datetime
 from xml.sax.saxutils import escape
 import time
 import os
+import chinese_calendar
 
 TOKEN = os.environ.get("Token")
-CHINA_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/china/latest/news?token={TOKEN}"
-WORLD_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/world/latest/news?token={TOKEN}"
-HOLIDAY_URL = f"https://api.istero.com/resource/v1/check/holiday?token={TOKEN}&date={datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat()}"
-TODAY_INTHEHISTORY_URL = f"https://api.istero.com/resource/v1/history/today?token={TOKEN}"
+# CHINA_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/china/latest/news?token={TOKEN}"
+# WORLD_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/world/latest/news?token={TOKEN}"
+# HOLIDAY_URL = f"https://api.istero.com/resource/v1/check/holiday?token={TOKEN}&date={datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat()}"
+# TODAY_INTHEHISTORY_URL = f"https://api.istero.com/resource/v1/history/today?token={TOKEN}"
 TOUTIAO_URL = "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
 QQ_URL = "https://r.inews.qq.com/gw/event/hot_ranking_list?page_size=20"
 WY_URL = "https://m.163.com/fe/api/hot/news/flow"
 WEIBO_URL = "https://m.weibo.cn/api/container/getIndex?containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Drealtimehot&title=%E5%BE%AE%E5%8D%9A%E7%83%AD%E6%90%9C&extparam=filter_type%3Drealtimehot%26mi_cid%3D100103%26pos%3D0_0%26c_type%3D30%26display_time%3D1540538388&luicode=10000011&lfid=231583"
 BILIBILI_URL = "https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all"
 NOWPATH = "https://pcl.wyc-w.top/"
-today_str = datetime.date.today().isoformat()
+# today_str = datetime.date.today().isoformat()
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.2739.42",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
@@ -51,6 +52,13 @@ bilibili_header = {
 "Cookie": "buvid3=653872FF-1CF0-02FC-2074-129616C4E5C110686infoc; b_nut=1754286310; _uuid=A7FF93F7-5281-58F3-D9E1-A74A10D1474B511536infoc; enable_web_push=DISABLE; DedeUserID=1676930979; DedeUserID__ckMd5=45937a9f5a76c250; theme-tip-show=SHOWED; theme-avatar-tip-show=SHOWED; rpdid=0zbfvRPVwD|pi6kNXLC|2qX|3w1UIO2O; LIVE_BUVID=AUTO9217551666069914; CURRENT_QUALITY=127; PVID=10; theme_style=light; home_feed_column=5; SESSDATA=810d1acd%2C1771588529%2Ca78a7%2A82CjALWkQN420X9oMSpjLA-cB1HfJj1-gHsvANM-w0OCDkuoU98f0TlDGZ8yPSbS5bYzgSVkpFZk1ITWhBT3Z5bEFhNUd2NFB0ZnlBUFA2MDVnMVB2b3p0OHl2anZ3RGdMdW5FQTFGV19FYnFaeGQ2TlpXT2VFRjJsWUd2VFFrenVYb1NTUkJSYWNnIIEC; bili_jct=3e0f8ad277ecdfde6fcc8e97352bf7d0; browser_resolution=1738-909; CURRENT_FNVAL=4048; buvid4=23FA359E-2ECF-606A-54D8-896C96D86E1937591-025011914-UMn4/nSnCr2JD8oBg2SoGI9FBPgLOgjSuWNSK7WZcCtfAqu/7ftYx4ojwmtcTWFw; bsource=search_bing; fingerprint=16280899fd5e483b819deaa24cdfab68; buvid_fp_plain=undefined; buvid_fp=16280899fd5e483b819deaa24cdfab68; sid=hdqfnlia; bp_t_offset_1676930979=1105391060047101952; bili_ticket=eyJhbGciOiJIUzI1NiIsImtpZCI6InMwMyIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTY0Njc5MDMsImlhdCI6MTc1NjIwODY0MywicGx0IjotMX0.D7fYD_QHDjb-1pnJwcMgGrPklRqPqvL3oTuX5-2SEuo; bili_ticket_expires=1756467843; b_lsid=462A67CE_198E63EF677"
 }
 
+wbheaders = {
+    "Referer": "https://s.weibo.com/top/summary?cate=realtimehot",
+    "MWeibo-Pwa": "1",
+    "X-Requested-With": "XMLHttpRequest",
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
+}
+
 def fetch_data(url):
     try:
         response = requests.get(url)
@@ -60,11 +68,10 @@ def fetch_data(url):
         print(f"请求失败 {url}: {e}")
         return None
     
-def fetech_data_bili(url):
+def fetch_data_hasheaders(url, headers_):
     try:
-        response = requests.get(url)
+        response = requests.get(url, headers=headers_)
         response.raise_for_status()
-        print(response.json())
         return response.json()
     except Exception as e:
         print(f"请求失败 {url}: {e}")
@@ -253,11 +260,11 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     else:
         nend_items = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取今日新闻失败</TextBlock>'
 
-    # wb_it = ""
-    # if wbd and wbd.get("ok") == 1:
-    #     wb_it = wb(wbd["data"]["cards"][0]["card_group"][:10])
-    # else:
-    #     wb_it = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取微博失败</TextBlock>'
+    wb_it = ""
+    if wbd and wbd.get("ok") == 1:
+        wb_it = wb(wbd["data"]["cards"][0]["card_group"][:10])
+    else:
+        wb_it = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取微博失败</TextBlock>'
 
     wy_it = ""
     if wyd and wyd.get("code") == 200:
@@ -339,13 +346,13 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     <StackPanel Margin="25,40,23,15">
         <UniformGrid Columns="2" Margin="0,0,0,8"> 
             <StackPanel Margin="0,2,10,8">
-                <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🆕 网易新闻" />
-                {wy_it}
+                <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🔥 微博热搜" />
+                {wb_it}
                 <Grid>
                     <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
                     </Grid.ColumnDefinitions>
-                    <local:MyButton Grid.Column="0" Margin="0,10,0,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.163.com/" />
+                    <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.qq.com/" />
                 </Grid>
             </StackPanel>
             <StackPanel Margin="0,2,10,8">
@@ -364,7 +371,7 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
 
 <local:MyCard Title="🔥 新闻热点" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
     <StackPanel Margin="25,40,23,15">
-        <UniformGrid Columns="1" Margin="0,0,0,8"> 
+        <UniformGrid Columns="2" Margin="0,0,0,8"> 
             <StackPanel Margin="0,2,10,8">
                 <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🐧 腾讯新闻" />
                 {nend_items}
@@ -373,6 +380,16 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
                             <ColumnDefinition Width="1*" />
                     </Grid.ColumnDefinitions>
                     <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.qq.com/" />
+                </Grid>
+            </StackPanel>
+            <StackPanel Margin="0,2,10,8">
+                <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🆕 网易新闻" />
+                {wy_it}
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <local:MyButton Grid.Column="0" Margin="0,10,0,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.163.com/" />
                 </Grid>
             </StackPanel>
         </UniformGrid>
@@ -415,19 +432,19 @@ def main():
     time.sleep(1)
     nend_news = fetch_data(QQ_URL)
     time.sleep(1)
-    # wb = fetch_data(WEIBO_URL)
-    wb = "0"
-    # time.sleep(1)
+    wb = fetch_data_hasheaders(WEIBO_URL, wbheaders)
+    # wb = "0"
+    time.sleep(1)
     wy = fetch_data(WY_URL)
     time.sleep(1)
     # bilibili = fetech_data_bili(BILIBILI_URL)
     # time.sleep(1)
     bilibili = "0"
-    china_news = fetch_data(CHINA_NEWS_URL)
-    time.sleep(1)
-    world_news = fetch_data(WORLD_NEWS_URL)
-    time.sleep(1)
-    holiday_info = fetch_data(HOLIDAY_URL)
+    # china_news = fetch_data(CHINA_NEWS_URL)
+    # time.sleep(1)
+    # world_news = fetch_data(WORLD_NEWS_URL)
+    # time.sleep(1)
+    # holiday_info = fetch_data(HOLIDAY_URL)
     # time.sleep(1)
     # history = fetch_data(TODAY_INTHEHISTORY_URL)
     history = "0"
