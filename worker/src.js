@@ -99,7 +99,7 @@ export default {
         const path = url.pathname;
 
         // 只允许访问 .xaml 和 .xaml.ini 文件
-        if (!path.endsWith('.xaml') && !path.endsWith('.xaml.ini')) {
+        if (!path.endsWith('.xaml') && !path.endsWith('.xaml.ini') && !path.endsWith('.PNG')) {
             return new Response('Not Found', { status: 404 });
         }
 
