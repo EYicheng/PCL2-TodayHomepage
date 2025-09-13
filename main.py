@@ -5,7 +5,7 @@ import time
 import os
 import chinese_calendar as calendar
 
-# TOKEN = os.environ.get("Token")
+TOKEN = os.environ.get("Token")
 # CHINA_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/china/latest/news?token={TOKEN}"
 # WORLD_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/world/latest/news?token={TOKEN}"
 # HOLIDAY_URL = f"https://api.istero.com/resource/v1/check/holiday?token={TOKEN}&date={datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat()}"
@@ -13,7 +13,7 @@ import chinese_calendar as calendar
 TOUTIAO_URL = "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
 QQ_URL = "https://r.inews.qq.com/gw/event/hot_ranking_list?page_size=20"
 WY_URL = "https://m.163.com/fe/api/hot/news/flow"
-WEIBO_URL = "https://60s.wyc-w.top/v2/weibo"
+WEIBO_URL = f"https://60s.wyc-w.top/v2/weibo?{TOKEN}"
 BILIBILI_URL = "https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all"
 NOWPATH = "https://pcl.wyc-w.top/"
 # today_str = datetime.date.today().isoformat()
