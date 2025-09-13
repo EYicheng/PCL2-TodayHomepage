@@ -3,9 +3,9 @@ import datetime
 from xml.sax.saxutils import escape
 import time
 import os
-import chinese_calendar
+import chinese_calendar as calendar
 
-TOKEN = os.environ.get("Token")
+# TOKEN = os.environ.get("Token")
 # CHINA_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/china/latest/news?token={TOKEN}"
 # WORLD_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/world/latest/news?token={TOKEN}"
 # HOLIDAY_URL = f"https://api.istero.com/resource/v1/check/holiday?token={TOKEN}&date={datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat()}"
@@ -13,7 +13,7 @@ TOKEN = os.environ.get("Token")
 TOUTIAO_URL = "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
 QQ_URL = "https://r.inews.qq.com/gw/event/hot_ranking_list?page_size=20"
 WY_URL = "https://m.163.com/fe/api/hot/news/flow"
-WEIBO_URL = "https://m.weibo.cn/api/container/getIndex?containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Drealtimehot&title=%E5%BE%AE%E5%8D%9A%E7%83%AD%E6%90%9C&extparam=filter_type%3Drealtimehot%26mi_cid%3D100103%26pos%3D0_0%26c_type%3D30%26display_time%3D1540538388&luicode=10000011&lfid=231583"
+WEIBO_URL = "https://60s.wyc-w.top/v2/weibo"
 BILIBILI_URL = "https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all"
 NOWPATH = "https://pcl.wyc-w.top/"
 # today_str = datetime.date.today().isoformat()
@@ -63,6 +63,7 @@ def fetch_data(url):
     try:
         response = requests.get(url)
         response.raise_for_status()
+        print(response.json())
         return response.json()
     except Exception as e:
         print(f"请求失败 {url}: {e}")
@@ -128,10 +129,10 @@ def wb(list):
     i = 0
     for item in list:
         i += 1
-        title = item.get("desc", "无标题").replace('"', "“")
-        url = item.get("scheme", "#").replace("&", "&amp;")
+        title = item.get("title", "无标题").replace('"', "“")
+        url = item.get("link", "#").replace("&", "&amp;")
         time = f"# {title}"
-        LogoUrl = f"{NOWPATH}images/toutiao/{i-1}.PNG".replace("&", "&amp;")
+        LogoUrl = f"{NOWPATH}images/toutiao/{i}.PNG".replace("&", "&amp;")
         line = f'''
         <local:MyListItem
             Margin="-5,2,-5,8"
@@ -247,7 +248,18 @@ def history_items(history_list):
         items.append(line)
     return "\n".join(items)
 
-def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world_news_data, holiday_data, history_data):
+def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
+    today = calendar.get_holiday_detail(datetime.date.today())
+    today_holiday = ""
+    if today is True:
+        if calendar.Holiday.labour_day.value:
+            today_holiday = f"今天放假！"
+        else:
+            today_holiday = f"今天是周末！"
+    else:
+        today_holiday = f"今天是工作日。😱"
+
+
     toutionews_items = ""
     if toutionews_data and toutionews_data.get("status") == "success":
         toutionews_items = doutiaonewsdata___(toutionews_data["data"][:10])
@@ -261,8 +273,9 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
         nend_items = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取今日新闻失败</TextBlock>'
 
     wb_it = ""
-    if wbd and wbd.get("ok") == 1:
-        wb_it = wb(wbd["data"]["cards"][0]["card_group"][:10])
+    if wbd and wbd.get("code") == 200:
+        wb_it = wb(wbd["data"][:10])
+        print("成功")
     else:
         wb_it = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取微博失败</TextBlock>'
 
@@ -278,43 +291,11 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     # else:
     #     blit = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取哔哩哔哩失败</TextBlock>'
 
-
-    # 国内新闻
-    china_news_items = ""
-    if china_news_data and china_news_data.get("code") == 200:
-        china_news_items = format_news_items(china_news_data["data"][:10])  # 最多显示10条
-    else:
-        china_news_items = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取国内新闻失败</TextBlock>'
-
-    # 国际新闻
-    world_news_items = ""
-    if world_news_data and world_news_data.get("code") == 200:
-        world_news_items = format_news_items(world_news_data["data"][:10])
-    else:
-        world_news_items = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取国际新闻失败</TextBlock>'
-
-    # 节假日信息
-    holiday_text = ""
-    if holiday_data and holiday_data.get("code") == 200:
-        name = holiday_data["data"].get("name", "法定节假日")
-        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y年%m月%d日")}，是 {name}！</TextBlock>'
-    elif holiday_data and holiday_data.get("code") == 400:
-        holiday_text = f'<TextBlock TextWrapping="Wrap" Margin="0,0,0,4">今天是{datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y年%m月%d日")}，不是法定节假日。</TextBlock>'
-    else:
-        holiday_text = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">无法获取节假日信息</TextBlock>'
-
-    # 历史上的今天
-    # history_text = ""
-    # if history_data and history_data.get("code") == 200:
-    #     history_text = history_items(history_data["data"][:10])
-    # else:
-    #     history_text = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">无法获取历史上的今天</TextBlock>'
-
     xaml_content = f'''
 <!-- 这是 PCL 的主页自定义文件。由 Python 脚本自动生成 -->
 <local:MyCard Title="📅 今日" Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="25,40,23,15">
-{holiday_text}
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="16">{today_holiday}</TextBlock>
         <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" FontSize="11" Foreground="#888">
             更新时间: {datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S")}
         </TextBlock>
@@ -396,31 +377,6 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
     </StackPanel>
 </local:MyCard>
 
-<Grid Margin="0,0,0,8">
-     <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="1*" />
-          <ColumnDefinition Width="100" />
-          <ColumnDefinition Width="1*" />
-     </Grid.ColumnDefinitions>
-     <Line X1="0" X2="100" Stroke="{{DynamicResource ColorBrush3}}" StrokeThickness="1.5"
-          Stretch="Fill" Grid.Column="0" />
-     <TextBlock Text="📺 CCTV 新闻" FontSize="15" Foreground="{{DynamicResource ColorBrush4}}" Grid.Column="1"
-          VerticalAlignment="Center" HorizontalAlignment="Center" />
-     <Line X1="0" X2="100" Stroke="{{DynamicResource ColorBrush3}}" StrokeThickness="1.5"
-          Stretch="Fill" Grid.Column="2" />
-</Grid>
-
-<local:MyCard Title="📰 CCTV 国内新闻" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
-    <StackPanel Margin="25,40,23,15">
-{china_news_items}
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="🌍 CCTV 国际新闻" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
-    <StackPanel Margin="25,40,23,15">
-{world_news_items}
-    </StackPanel>
-</local:MyCard>
 '''
     with open("index.xaml", "w", encoding="utf-8") as f:
         f.write(xaml_content)
@@ -429,13 +385,17 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, china_news_data, world
 def main():
     print("📡 正在获取新闻与节假日信息...")
     toutiao_news = fetch_data(TOUTIAO_URL)
+    print("-------头条-------\n\n\n\n\n")
     time.sleep(1)
     nend_news = fetch_data(QQ_URL)
+    print("-------QQ-------\n\n\n\n\n")
     time.sleep(1)
-    wb = fetch_data_hasheaders(WEIBO_URL, wbheaders)
+    wb = fetch_data(WEIBO_URL)
+    print("-------weibo-------\n\n\n\n\n")
     # wb = "0"
     time.sleep(1)
     wy = fetch_data(WY_URL)
+    print("-------wy-------\n\n\n\n\n")
     time.sleep(1)
     # bilibili = fetech_data_bili(BILIBILI_URL)
     # time.sleep(1)
@@ -449,7 +409,7 @@ def main():
     # history = fetch_data(TODAY_INTHEHISTORY_URL)
     history = "0"
 
-    generate_xaml(toutiao_news, nend_news, wb, wy, bilibili, china_news, world_news, holiday_info, history)
+    generate_xaml(toutiao_news, nend_news, wb, wy, bilibili, history)
 
     # 生成版本号：YYYYMMDD-HHMM（24小时制）
     version_str = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S")
@@ -498,6 +458,31 @@ if __name__ == "__main__":
 <local:MyCard Title="📖 历史上的今天" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
     <StackPanel Margin="25,40,23,15">
 {history_text}
+    </StackPanel>
+</local:MyCard>
+
+
+<Grid Margin="0,0,0,8">
+     <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="1*" />
+          <ColumnDefinition Width="100" />
+          <ColumnDefinition Width="1*" />
+     </Grid.ColumnDefinitions>
+     <Line X1="0" X2="100" Stroke="{{DynamicResource ColorBrush3}}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="0" />
+     <TextBlock Text="📺 CCTV 新闻" FontSize="15" Foreground="{{DynamicResource ColorBrush4}}" Grid.Column="1"
+          VerticalAlignment="Center" HorizontalAlignment="Center" />
+     <Line X1="0" X2="100" Stroke="{{DynamicResource ColorBrush3}}" StrokeThickness="1.5"
+          Stretch="Fill" Grid.Column="2" />
+</Grid>
+
+<local:MyCard Title="📰 CCTV 国内新闻" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="🌍 CCTV 国际新闻" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
     </StackPanel>
 </local:MyCard>
 '''

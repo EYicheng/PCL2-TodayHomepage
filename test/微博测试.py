@@ -1,22 +1,24 @@
 import requests
-
-# API URL
-url = "https://m.weibo.cn/api/container/getIndex?containerid=106003type%3D25%26t%3D3%26disable_hot%3D1%26filter_type%3Drealtimehot&title=%E5%BE%AE%E5%8D%9A%E7%83%AD%E6%90%9C&extparam=filter_type%3Drealtimehot%26mi_cid%3D100103%26pos%3D0_0%26c_type%3D30%26display_time%3D1540538388&luicode=10000011&lfid=231583"
-
-# 请求头
-headers = {
-    "Referer": "https://s.weibo.com/top/summary?cate=realtimehot",
-    "MWeibo-Pwa": "1",
-    "X-Requested-With": "XMLHttpRequest",
-    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
-}
-
-# 发起请求
-response = requests.get(url, headers=headers)
-
-# 检查请求是否成功
-if response.status_code == 200:
-    result = response.json()
-    print(result)
-else:
-    print(f"请求失败，状态码：{response.status_code}")
+from bs4 import BeautifulSoup
+def fetch_weibo_hot_search():
+   url = "https://s.weibo.com/top/summary?cate=realtimehot"
+   headers = {
+       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+   }
+   response = requests.get(url, headers=headers)
+   print(response)
+   soup = BeautifulSoup(response.text, "html.parser")
+   table = soup.find("table", class_="table")
+   rows = table.find_all("tr")[1:] # 跳过表头
+   data = []
+   for row in rows:
+       cols = row.find_all("td")
+       rank = cols[0].text.strip()
+       keyword = cols[1].text.strip()
+       link = "https://s.weibo.com" + cols[1].a["href"]
+       heat = cols[2].text.strip() if len(cols) > 2 else "N/A"
+       data.append({"排名": rank, "关键词": keyword, "热度": heat, "链接": link})
+   return data
+data = fetch_weibo_hot_search()
+for item in data:
+   print(item)
