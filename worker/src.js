@@ -108,13 +108,13 @@ export default {
         const referer = request.headers.get('Referer') || '';
 
         // UA 检查
-        if (!isValidUA(ua)) {
+        if (!isValidUA(ua) && !path.endsWith('.PNG')) {
             console.log(`Invalid User-Agent: ${ua}`);
             return new Response('Forbidden: Invalid User-Agent', { status: 403 });
         }
 
         // Referer 检查（可选，但推荐）
-        if (!isValidReferer(referer)) {
+        if (!isValidReferer(referer) && !path.endsWith('.PNG')) {
             console.log(`Invalid Referer: ${referer}`);
             return new Response('Forbidden: Invalid Referer', { status: 403 });
         }
