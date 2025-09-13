@@ -100,6 +100,7 @@ export default {
 
         // 只允许访问 .xaml 和 .xaml.ini 文件
         if (!path.endsWith('.xaml') && !path.endsWith('.xaml.ini') && !path.endsWith('.PNG')) {
+            console.log(`Invalid path: ${path}`);
             return new Response('Not Found', { status: 404 });
         }
 
@@ -108,11 +109,13 @@ export default {
 
         // UA 检查
         if (!isValidUA(ua)) {
+            console.log(`Invalid User-Agent: ${ua}`);
             return new Response('Forbidden: Invalid User-Agent', { status: 403 });
         }
 
         // Referer 检查（可选，但推荐）
         if (!isValidReferer(referer)) {
+            console.log(`Invalid Referer: ${referer}`);
             return new Response('Forbidden: Invalid Referer', { status: 403 });
         }
 
@@ -120,6 +123,7 @@ export default {
         const clientKey = `${ua}_${path}`; // 也可用 IP: request.headers.get('CF-Connecting-IP')
         const allowed = await checkRateLimit(clientKey, env); // 传入 env
         if (!(!allowed || allowed)) { // 暂时关闭检测
+            console.log(`Rate limit exceeded for ${clientKey}`);
             return new Response('Too Many Requests', { status: 429 });
         }
 
