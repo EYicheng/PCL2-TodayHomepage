@@ -1,8 +1,9 @@
 import requests
 import datetime
+from datetime import datetime
+import pytz
 from xml.sax.saxutils import escape
 import time
-import os
 import chinese_calendar as calendar
 
 # 微博热搜：经过两个月，主任终于想起我了！喵~
@@ -251,15 +252,15 @@ def history_items(history_list):
     return "\n".join(items)
 
 def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
-    today = calendar.get_holiday_detail(datetime.date.today())
+    today = calendar.get_holiday_detail(datetime.now(pytz.timezone('Asia/Shanghai')))
     today_holiday = ""
     if today is True:
         if calendar.Holiday.labour_day.value:
-            today_holiday = f"今天放假！"
+            today_holiday = f"今天是{datetime.now(pytz.timezone('Asia/Shanghai')).strftime('%Y年%m月%d日')}，今天放假！"
         else:
-            today_holiday = f"今天是周末！"
+            today_holiday = f"今天是{datetime.now(pytz.timezone('Asia/Shanghai')).strftime('%Y年%m月%d日')}，今天是周末！"
     else:
-        today_holiday = f"今天是工作日。😱"
+        today_holiday = f"今天是{datetime.now(pytz.timezone('Asia/Shanghai')).strftime('%Y年%m月%d日')}，今天是工作日。"
 
 
     toutionews_items = ""
@@ -299,7 +300,7 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="16">{today_holiday}</TextBlock>
         <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" FontSize="11" Foreground="#888">
-            更新时间: {datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S")}
+            更新时间: {datetime.now(pytz.timezone('Asia/Shanghai')).strftime("%Y-%m-%d %H:%M:%S")}
         </TextBlock>
         <local:MyIconTextButton Margin="-15,10,0,0" Height="35" HorizontalAlignment="Left"
                     Text="刷新主页" EventType="刷新主页" Grid.Column="1"
