@@ -335,7 +335,7 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
                     <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
                     </Grid.ColumnDefinitions>
-                    <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://www.qq.com/" />
+                    <local:MyButton Grid.Column="0" Margin="0,10,10,0" Height="35" Text="查看更多……" EventType="打开网页" EventData="https://weibo.com/newlogin?tabtype=search" />
                 </Grid>
             </StackPanel>
             <StackPanel Margin="0,2,10,8">
