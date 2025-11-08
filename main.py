@@ -5,7 +5,9 @@ import time
 import os
 import chinese_calendar as calendar
 
-TOKEN = os.environ.get("Token")
+# 微博热搜：经过两个月，主任终于想起我了！喵~
+
+# TOKEN = os.environ.get("Token") if 1==1 else 
 # CHINA_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/china/latest/news?token={TOKEN}"
 # WORLD_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/world/latest/news?token={TOKEN}"
 # HOLIDAY_URL = f"https://api.istero.com/resource/v1/check/holiday?token={TOKEN}&date={datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat()}"
@@ -13,7 +15,7 @@ TOKEN = os.environ.get("Token")
 TOUTIAO_URL = "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
 QQ_URL = "https://r.inews.qq.com/gw/event/hot_ranking_list?page_size=20"
 WY_URL = "https://m.163.com/fe/api/hot/news/flow"
-WEIBO_URL = f"https://60s.wyc-w.top/v2/weibo?{TOKEN}"
+WEIBO_URL = f"https://uapis.cn/api/v1/misc/hotboard?type=weibo"
 BILIBILI_URL = "https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all"
 NOWPATH = "https://pcl.wyc-w.top/"
 # today_str = datetime.date.today().isoformat()
@@ -129,16 +131,16 @@ def wb(list):
     i = 0
     for item in list:
         i += 1
-        title = item.get("title", "无标题").replace('"', "“")
-        url = item.get("link", "#").replace("&", "&amp;")
-        time = f"# {title}"
+        title = item.get("title", "").replace('"', "“")
+        url = item.get("url", "#").replace("&", "&amp;")
+        time = item.get("hot_value", "")
         LogoUrl = f"{NOWPATH}images/toutiao/{i}.PNG".replace("&", "&amp;")
         line = f'''
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="{LogoUrl}"
             Title="{title}"
-            Info="{time}"
+            Info="🔥{time}"
             EventType="打开网页"
             EventData="{url}"
             Type="Clickable" />'''
@@ -273,8 +275,8 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
         nend_items = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取今日新闻失败</TextBlock>'
 
     wb_it = ""
-    if wbd and wbd.get("code") == 200:
-        wb_it = wb(wbd["data"][:10])
+    if wbd and wbd.get("type") == "weibo":
+        wb_it = wb(wbd["list"][:10])
         print("成功")
     else:
         wb_it = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取微博失败</TextBlock>'
