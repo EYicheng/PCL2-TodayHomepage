@@ -1,5 +1,5 @@
 # PCL2-TodayHomepage
-
+![下一次观天下大局，何必在新闻软件](docs/1.png)
 - [PCL2-TodayHomepage](#pcl2-todayhomepage)
   - [核心功能](#核心功能)
   - [使用说明](#使用说明)
@@ -55,8 +55,7 @@ graph TD
     B --> D[CCTV新闻API]
     B --> E[节假日API]
     F --> G[index.xaml]
-    G --> H[Cloudflare Worker]
-    H --> I[PCL2启动器]
+    G --> I[PCL2启动器]
     C --> F[生成XAML]
     D --> F[生成XAML]
     E --> F[生成XAML]
@@ -74,4 +73,5 @@ graph TD
    - 范围：除由程序生成的.xaml文件
    - 采用 **[GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.html)** 许可
   
-**重要声明**：本系统生成的新闻内容来自第三方 API，新闻内容版权属于原始媒体机构。本仓库仅提供技术整合，不对第三方内容的版权负责，用户需自行确保合规使用。
+> [!IMPORTANT]
+> **重要声明**：本系统生成的新闻内容来自第三方 API，新闻内容版权属于原始媒体机构。本仓库仅提供技术整合，不对第三方内容的版权负责，用户需自行确保合规使用。
