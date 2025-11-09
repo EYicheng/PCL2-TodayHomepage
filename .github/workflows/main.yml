@@ -23,6 +23,7 @@ jobs:
         run: |
           pip install requests
           pip install chinesecalendar
+          pip install pytz
 
       - name: Run main.py
         env:
