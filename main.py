@@ -415,7 +415,7 @@ def main():
     generate_xaml(toutiao_news, nend_news, wb, wy, bilibili, history)
 
     # 生成版本号：YYYYMMDD-HHMM（24小时制）
-    version_str = datetime.now(datetime.timezone(datetime.timedelta(hours=8))).strftime("%Y-%m-%d %H:%M:%S")
+    version_str = datetime.now(pytz.timezone('Asia/Shanghai')).strftime("%Y-%m-%d %H:%M:%S")
         
     # 写入 version 文件
     with open('index.xaml.ini', 'w', encoding='utf-8') as f:
