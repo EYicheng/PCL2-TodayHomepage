@@ -254,8 +254,8 @@ def history_items(history_list):
 def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
     today = calendar.get_holiday_detail(datetime.now(pytz.timezone('Asia/Shanghai')))
     today_holiday = ""
-    if today is True:
-        if calendar.Holiday.labour_day.value:
+    if today[0] == True:
+        if today[1] != None:
             today_holiday = f"今天是{datetime.now(pytz.timezone('Asia/Shanghai')).strftime('%Y年%m月%d日')}，今天放假！"
         else:
             today_holiday = f"今天是{datetime.now(pytz.timezone('Asia/Shanghai')).strftime('%Y年%m月%d日')}，今天是周末！"
