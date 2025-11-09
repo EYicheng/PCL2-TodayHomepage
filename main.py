@@ -381,6 +381,17 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
 </local:MyCard>
 
 '''
+    
+    if datetime.now().timestamp() <= 1762747200:
+        xaml_content = '''
+<local:MyCard Margin="0,0,0,15" CanSwap="False">
+    <StackPanel Margin="25,15,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,0" FontSize="16">第十五届全国运动会今日在广州开幕，粤港澳三地联合举办！</TextBlock>
+    </StackPanel>
+</local:MyCard>
+
+''' + xaml_content
+
     with open("index.xaml", "w", encoding="utf-8") as f:
         f.write(xaml_content)
     print("✅ index.xaml 文件已生成！")
