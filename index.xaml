@@ -4,7 +4,7 @@
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="16">今天是2025年11月13日，今天是工作日。</TextBlock>
         <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" FontSize="11" Foreground="#888">
-            更新时间: 2025-11-13 08:52:48
+            更新时间: 2025-11-13 10:36:15
         </TextBlock>
         <local:MyIconTextButton Margin="-15,10,0,0" Height="35" HorizontalAlignment="Left"
                     Text="刷新主页" EventType="刷新主页" Grid.Column="1"
@@ -35,96 +35,7 @@
         <UniformGrid Columns="2" Margin="0,0,0,8"> 
             <StackPanel Margin="0,2,10,8">
                 <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🔥 微博热搜" />
-                
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/1.PNG"
-            Title="奇瑞致歉"
-            Info="🔥111.9万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E5%A5%87%E7%91%9E%E8%87%B4%E6%AD%89&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
-            Title="高市早苗妄谈台海震惊日本舆论"
-            Info="🔥60.6万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E5%A6%84%E8%B0%88%E5%8F%B0%E6%B5%B7%E9%9C%87%E6%83%8A%E6%97%A5%E6%9C%AC%E8%88%86%E8%AE%BA&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
-            Title="网警查处虚构事实扰乱公共秩序案"
-            Info="🔥50.9万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E7%BD%91%E8%AD%A6%E6%9F%A5%E5%A4%84%E8%99%9A%E6%9E%84%E4%BA%8B%E5%AE%9E%E6%89%B0%E4%B9%B1%E5%85%AC%E5%85%B1%E7%A7%A9%E5%BA%8F%E6%A1%88&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
-            Title="穿普拉达的女王2首支预告"
-            Info="🔥50.3万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E7%A9%BF%E6%99%AE%E6%8B%89%E8%BE%BE%E7%9A%84%E5%A5%B3%E7%8E%8B2%E9%A6%96%E6%94%AF%E9%A2%84%E5%91%8A&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/5.PNG"
-            Title="唐诡3第9集10分15秒"
-            Info="🔥27.7万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E5%94%90%E8%AF%A13%E7%AC%AC9%E9%9B%8610%E5%88%8615%E7%A7%92&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/6.PNG"
-            Title="孙杨因犯规被取消成绩"
-            Info="🔥23.5万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E5%AD%99%E6%9D%A8%E5%9B%A0%E7%8A%AF%E8%A7%84%E8%A2%AB%E5%8F%96%E6%B6%88%E6%88%90%E7%BB%A9&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-            Title="比尔赛季报销"
-            Info="🔥21.2万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E6%AF%94%E5%B0%94%E8%B5%9B%E5%AD%A3%E6%8A%A5%E9%94%80&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/8.PNG"
-            Title="日本敢介入台海吗"
-            Info="🔥19.7万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E6%97%A5%E6%9C%AC%E6%95%A2%E4%BB%8B%E5%85%A5%E5%8F%B0%E6%B5%B7%E5%90%97&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/9.PNG"
-            Title="无印良品 过度包装"
-            Info="🔥18.4万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E6%97%A0%E5%8D%B0%E8%89%AF%E5%93%81%20%E8%BF%87%E5%BA%A6%E5%8C%85%E8%A3%85&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
-
-        <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
-            Title="肖战新剧紧张感拉满"
-            Info="🔥15.6万"
-            EventType="打开网页"
-            EventData="https://s.weibo.com/weibo?q=%23%E8%82%96%E6%88%98%E6%96%B0%E5%89%A7%E7%B4%A7%E5%BC%A0%E6%84%9F%E6%8B%89%E6%BB%A1&amp;t=31&amp;band_rank=1&amp;Refer=top"
-            Type="Clickable" />
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取微博失败</TextBlock>
                 <Grid>
                     <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
@@ -138,26 +49,26 @@
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/1.PNG"
-            Title="日本资深议员称高市早苗极为危险"
-            Info="🔥37391998"
+            Title="2名台湾网红煽动分裂国家被悬赏"
+            Info="🔥39769318"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7570957825065730091/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227570957825065730091%22%2C%22hot_board_impr_id%22%3A%2220251113085240CF55A285C16AD4BA1558%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%97%A5%E6%9C%AC%E8%B5%84%E6%B7%B1%E8%AE%AE%E5%91%98%E7%A7%B0%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E6%9E%81%E4%B8%BA%E5%8D%B1%E9%99%A9%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7570957825065730091"
+            EventData="https://www.toutiao.com/trending/7572008554551328787/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227572008554551328787%22%2C%22hot_board_impr_id%22%3A%2220251113102927C15615865ADE94FDB906%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%222%E5%90%8D%E5%8F%B0%E6%B9%BE%E7%BD%91%E7%BA%A2%E7%85%BD%E5%8A%A8%E5%88%86%E8%A3%82%E5%9B%BD%E5%AE%B6%E8%A2%AB%E6%82%AC%E8%B5%8F%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7572008554551328787"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
-            Title="官方：不允许城镇居民到农村买农房"
-            Info="🔥33833679"
+            Title="日本资深议员称高市早苗极为危险"
+            Info="🔥35984767"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7571243623166312502/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571243623166312502%22%2C%22hot_board_impr_id%22%3A%2220251113085240CF55A285C16AD4BA1558%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%AE%98%E6%96%B9%EF%BC%9A%E4%B8%8D%E5%85%81%E8%AE%B8%E5%9F%8E%E9%95%87%E5%B1%85%E6%B0%91%E5%88%B0%E5%86%9C%E6%9D%91%E4%B9%B0%E5%86%9C%E6%88%BF%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571243623166312502"
+            EventData="https://www.toutiao.com/trending/7570957825065730091/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227570957825065730091%22%2C%22hot_board_impr_id%22%3A%2220251113102927C15615865ADE94FDB906%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%97%A5%E6%9C%AC%E8%B5%84%E6%B7%B1%E8%AE%AE%E5%91%98%E7%A7%B0%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E6%9E%81%E4%B8%BA%E5%8D%B1%E9%99%A9%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7570957825065730091"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
             Title="“十五五”规划《纲要》问计求策"
-            Info="🔥30613979"
+            Info="🔥32560364"
             EventType="打开网页"
             EventData="https://www.toutiao.com/article/7570338190038991386"
             Type="Clickable" />
@@ -165,64 +76,64 @@
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
-            Title="水果店便宜得像批发价走红"
-            Info="🔥27700674"
+            Title="官方：不允许城镇居民到农村买农房"
+            Info="🔥29461836"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7571691780933435402/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571691780933435402%22%2C%22hot_board_impr_id%22%3A%2220251113085240CF55A285C16AD4BA1558%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B0%B4%E6%9E%9C%E5%BA%97%E4%BE%BF%E5%AE%9C%E5%BE%97%E5%83%8F%E6%89%B9%E5%8F%91%E4%BB%B7%E8%B5%B0%E7%BA%A2%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571691780933435402"
+            EventData="https://www.toutiao.com/trending/7571243623166312502/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571243623166312502%22%2C%22hot_board_impr_id%22%3A%2220251113102927C15615865ADE94FDB906%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%AE%98%E6%96%B9%EF%BC%9A%E4%B8%8D%E5%85%81%E8%AE%B8%E5%9F%8E%E9%95%87%E5%B1%85%E6%B0%91%E5%88%B0%E5%86%9C%E6%9D%91%E4%B9%B0%E5%86%9C%E6%88%BF%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571243623166312502"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/5.PNG"
-            Title="北京极光"
-            Info="🔥25064606"
+            Title="馆长怒批高市早苗涉台言论"
+            Info="🔥26658171"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7571385738563862534/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571385738563862534%22%2C%22hot_board_impr_id%22%3A%2220251113085240CF55A285C16AD4BA1558%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%8C%97%E4%BA%AC%E6%9E%81%E5%85%89%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571385738563862534"
+            EventData="https://www.toutiao.com/trending/7571749573472436243/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571749573472436243%22%2C%22hot_board_impr_id%22%3A%2220251113102927C15615865ADE94FDB906%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%A6%86%E9%95%BF%E6%80%92%E6%89%B9%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E6%B6%89%E5%8F%B0%E8%A8%80%E8%AE%BA%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571749573472436243"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/6.PNG"
-            Title="净网 | 女子编造买卖儿童器官被处罚"
-            Info="🔥22679393"
+            Title="净网 | 女子造谣买卖儿童器官被处罚"
+            Info="🔥24121311"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7572002077845769774/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227572002077845769774%22%2C%22hot_board_impr_id%22%3A%2220251113085240CF55A285C16AD4BA1558%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%87%80%E7%BD%91+%7C+%E5%A5%B3%E5%AD%90%E7%BC%96%E9%80%A0%E4%B9%B0%E5%8D%96%E5%84%BF%E7%AB%A5%E5%99%A8%E5%AE%98%E8%A2%AB%E5%A4%84%E7%BD%9A%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7572002077845769774"
+            EventData="https://www.toutiao.com/trending/7572002077845769774/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%222%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227572002077845769774%22%2C%22hot_board_impr_id%22%3A%2220251113102927C15615865ADE94FDB906%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%87%80%E7%BD%91+%7C+%E5%A5%B3%E5%AD%90%E9%80%A0%E8%B0%A3%E4%B9%B0%E5%8D%96%E5%84%BF%E7%AB%A5%E5%99%A8%E5%AE%98%E8%A2%AB%E5%A4%84%E7%BD%9A%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7572002077845769774"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-            Title="孙杨抢跳被取消资格"
-            Info="🔥20521164"
+            Title="俄乌冲突会演变成俄与北约直接对抗吗"
+            Info="🔥21825864"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7571347379069141028/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571347379069141028%22%2C%22hot_board_impr_id%22%3A%2220251113085240CF55A285C16AD4BA1558%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%AD%99%E6%9D%A8%E6%8A%A2%E8%B7%B3%E8%A2%AB%E5%8F%96%E6%B6%88%E8%B5%84%E6%A0%BC%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571347379069141028"
+            EventData="https://www.toutiao.com/trending/7571610233622020115/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2210%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571610233622020115%22%2C%22hot_board_impr_id%22%3A%2220251113102927C15615865ADE94FDB906%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BF%84%E4%B9%8C%E5%86%B2%E7%AA%81%E4%BC%9A%E6%BC%94%E5%8F%98%E6%88%90%E4%BF%84%E4%B8%8E%E5%8C%97%E7%BA%A6%E7%9B%B4%E6%8E%A5%E5%AF%B9%E6%8A%97%E5%90%97%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571610233622020115"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/8.PNG"
-            Title="民政部门证实离婚证背面有“囍”字"
-            Info="🔥18568317"
+            Title="媒体评取款需“自证清白”"
+            Info="🔥19748859"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7571657135214510099/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%226%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571657135214510099%22%2C%22hot_board_impr_id%22%3A%2220251113085240CF55A285C16AD4BA1558%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B0%91%E6%94%BF%E9%83%A8%E9%97%A8%E8%AF%81%E5%AE%9E%E7%A6%BB%E5%A9%9A%E8%AF%81%E8%83%8C%E9%9D%A2%E6%9C%89%E2%80%9C%E5%9B%8D%E2%80%9D%E5%AD%97%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571657135214510099"
+            EventData="https://www.toutiao.com/trending/7571833220208004662/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2213%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571833220208004662%22%2C%22hot_board_impr_id%22%3A%2220251113102927C15615865ADE94FDB906%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%AA%92%E4%BD%93%E8%AF%84%E5%8F%96%E6%AC%BE%E9%9C%80%E2%80%9C%E8%87%AA%E8%AF%81%E6%B8%85%E7%99%BD%E2%80%9D%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571833220208004662"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/9.PNG"
-            Title="高市早苗扬言介入台海背后有何企图"
-            Info="🔥16801308"
+            Title="水果店便宜得像批发价走红"
+            Info="🔥17869506"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7570615994289274916/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227570615994289274916%22%2C%22hot_board_impr_id%22%3A%2220251113085240CF55A285C16AD4BA1558%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%AB%98%E5%B8%82%E6%97%A9%E8%8B%97%E6%89%AC%E8%A8%80%E4%BB%8B%E5%85%A5%E5%8F%B0%E6%B5%B7%E8%83%8C%E5%90%8E%E6%9C%89%E4%BD%95%E4%BC%81%E5%9B%BE%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7570615994289274916"
+            EventData="https://www.toutiao.com/trending/7571691780933435402/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%220%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571691780933435402%22%2C%22hot_board_impr_id%22%3A%2220251113102927C15615865ADE94FDB906%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%B0%B4%E6%9E%9C%E5%BA%97%E4%BE%BF%E5%AE%9C%E5%BE%97%E5%83%8F%E6%89%B9%E5%8F%91%E4%BB%B7%E8%B5%B0%E7%BA%A2%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571691780933435402"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
-            Title="俄乌冲突会演变成俄与北约直接对抗吗"
-            Info="🔥15202452"
+            Title="杜锋：很高兴把冠军留在广东"
+            Info="🔥16168998"
             EventType="打开网页"
-            EventData="https://www.toutiao.com/trending/7571610233622020115/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%2210%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227571610233622020115%22%2C%22hot_board_impr_id%22%3A%2220251113085240CF55A285C16AD4BA1558%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E4%BF%84%E4%B9%8C%E5%86%B2%E7%AA%81%E4%BC%9A%E6%BC%94%E5%8F%98%E6%88%90%E4%BF%84%E4%B8%8E%E5%8C%97%E7%BA%A6%E7%9B%B4%E6%8E%A5%E5%AF%B9%E6%8A%97%E5%90%97%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7571610233622020115"
+            EventData="https://www.toutiao.com/trending/7570738602716528649/?category_name=topic_innerflow&amp;event_type=hot_board&amp;log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227570738602716528649%22%2C%22hot_board_impr_id%22%3A%2220251113102927C15615865ADE94FDB906%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E6%9D%9C%E9%94%8B%EF%BC%9A%E5%BE%88%E9%AB%98%E5%85%B4%E6%8A%8A%E5%86%A0%E5%86%9B%E7%95%99%E5%9C%A8%E5%B9%BF%E4%B8%9C%22%7D&amp;rank=&amp;style_id=40132&amp;topic_id=7570738602716528649"
             Type="Clickable" />
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -240,96 +151,7 @@
         <UniformGrid Columns="2" Margin="0,0,0,8"> 
             <StackPanel Margin="0,2,10,8">
                 <TextBlock Margin="0,4,0,6" FontWeight="Bold" Text="🐧 腾讯新闻" />
-                
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/1.PNG"
-                Title="习近平向第二十次中越两党理论研讨会致贺信"
-                Info="2025-11-12 17:06:09  |  新华社北京11月12日电 11月12日，中共中央总书记、国家主席习近平向第二十次中越两党理论研讨会致贺信。 习近平指出，中越两国是好邻居、好朋友、好同志、好伙伴，是具有战略意义的命运共同体。中越两党都坚持和发展马克思主义，都坚定不移走社会主义道路，都领导各自国家进行社会主义建设，面临许多相同或相似的时代课题。..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251112A04WV500"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
-                Title="孙杨决赛抢跳被取消成绩"
-                Info="2025-11-12 19:34:15  |  11月12日晚，第十五届全运会游泳比赛继续在深圳大运中心游泳馆举行。在男子200米自由泳决赛中，张展硕斩获冠军，季新杰亚军，潘展乐季军。本场比赛，孙杨的成绩位列第八，显示DSQ（被取消比赛资格）。 赛后，孙杨在接受记者采访时表示，今天的抢跳把自己的状态全打乱了，多少有一些影响。他还说，没关系，调整好心态，下一..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251112A05PSH00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
-                Title="万亿级央企，成立新公司"
-                Info="2025-11-13 07:15:13  |  南方电网网站消息，11月12日，南方电网产融控股集团有限公司(简称“南网产融集团”)在广州揭牌成立。南方电网公司董事长、党组书记孟振平出席揭牌仪式并致辞，公司党组成员、总会计师单淑兰主持揭牌仪式。孟振平指出，成立南网产融集团，是南方电网公司党组深入贯彻落实习近平总书记关于金融工作的系列重要论述精神，推进公司产业金融高质量发展的战略性举措。展望未来"
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251112A06JAL00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
-                Title="大国五年 | 体育强，国运兴！"
-                Info="2025-11-12 17:15:10  |  竞技场上，国旗频升国歌频传，体育健儿写下“体育大国”“奥运强国”最精彩篇章；公园里巷，全民健身，“轻体育”生活成为“健康中国”新风尚；“村超”“苏超”好戏连台、热火朝天，普通人成为新主角；新业态、新消费迸发无限活力，体育经济亿万规模助力国民经济…… 体育强则中国强，国运兴则体育兴。“十四五”时期，体..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251112A04ZWO00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/5.PNG"
-                Title="中、美、日、韩、德，位列前五"
-                Info="2025-11-13 07:15:06  |  据央视新闻消息，当地时间12日，世界知识产权组织发布年度报告《世界知识产权指标》。该报告指出，2024年全球专利申请量和全球外观设计申请量继续攀升。经历两年放缓后，全球商标申请量呈现复苏迹象。中国表现突出，三项申请量均居全球首位。报告显示，2024年全球专利申请量实现连续五年增长，创下370万件历史新高，增幅达..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251112A06MIO00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/6.PNG"
-                Title="公安部将限制汽车百公里加速小于5秒"
-                Info="2025-11-12 19:54:09  |  推动汽车安全行驶，相关部门正在行动。近日，根据国家标准化管理委员会标准制修订计划，公安部组织完成了《机动车运行安全技术条件》国家标准的征求意见稿（下称“《条件》”）。其中提及限速要求：乘用车每次启动后，应处于百公里加速时间（0～100km/h）不少于5秒的默认状态。 同时，纯电动、插混载客汽车应具备踏板误踩加..."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251112A05SHJ00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-                Title="视频丨涉案超27亿元！佘智江被引渡回国 公安部披露详情"
-                Info="2025-11-12 21:11:00  |  11月12日，随着一架中国民航客机降落在南京禄口国际机场，我公安机关通缉的跨境赌博“十大逃犯”之一、缅甸妙瓦底“亚太新城”赌诈犯罪集团主犯佘智江被成功从泰国引渡回国，这是中泰开展执法司法合作取得的又一重大战果，彰显了双方坚决打击网赌电诈犯罪的坚定决心和鲜明立场。据了解，2013年以来，佘智江在境外成立亚太国际控股集团，于2017年9月在缅甸妙瓦底建设“亚太"
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251112A065R000"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/8.PNG"
-                Title="年轻人为什么不谈恋爱不结婚？恋爱专家解读：人生主线是学习和工作，恋爱是一种干扰"
-                Info="2025-11-11 17:00:14  |  "
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251111V0534N00"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/9.PNG"
-                Title="多方回应“5000平方别墅被指违建”：此前回应有误，该建筑是依法出让合法建设"
-                Info="2025-11-12 17:29:18  |  封面新闻记者 石伟      近日，一条衡阳市衡山县私人别墅的视频引发关注，有村民向封面新闻记者反映，这处宣称占地5000平方米的私人豪宅，疑似占用农用耕地违建。      别墅外景（当地村民供图）...."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251112A053J100"
-                Type="Clickable" />
-
-            <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
-                Title="重大决裂！爆料：美军被断供"
-                Info="2025-11-12 17:51:00  |  美国有线电视新闻网（CNN）11日援引消息人士的话爆料称，英国不再与美国军方分享有关加勒比海疑似贩毒船只的情报，因为它不想成为美国军事打击的“帮凶”，并认为这些袭击违反国际法。美媒认为，这一决定标志...."
-                EventType="打开网页"
-                EventData="https://view.inews.qq.com/a/20251112A059MJ00"
-                Type="Clickable" />
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取今日新闻失败</TextBlock>
                 <Grid>
                     <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
@@ -343,91 +165,91 @@
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/1.PNG"
-            Title="姆巴佩鼓励乌帕梅卡诺加盟皇马！拉波尔塔排除梅西短期回归巴萨！"
-            Info="2025-11-13 02:46:57  |  足球侦探"
+            Title="弗鲁米嫩塞主席：俱乐部近期与内马尔及其团队没有任何接触"
+            Info="2025-11-13 10:08:04  |  懂球帝"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE7AL9ER0529KVQI.html"
+            EventData="https://m.163.com/news/article/KE83T0JF0549BAP0.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/2.PNG"
-            Title="牛弹琴：中日关系急转直下 日本政坛大佬也看不下去了"
-            Info="2025-11-13 08:21:58  |  上游新闻"
+            Title="苏州考古博物馆2个月接待10万人次，为何馆长觉得博物馆被流量“绑架”了？"
+            Info="2025-11-13 10:06:12  |  上观新闻"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE7TQN3L0001899O.html"
+            EventData="https://m.163.com/news/article/KE83PIB4055040N3.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/3.PNG"
-            Title="阿森纳将任命那不勒斯球探主管！德天空：枪手考虑续约特罗萨德！"
-            Info="2025-11-13 02:38:15  |  足球侦探"
+            Title="48小时逆转夺牌！有徐根宝在，心就是定的"
+            Info="2025-11-13 09:47:49  |  新民晚报"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE7A5C5I0529KVQI.html"
+            EventData="https://m.163.com/news/article/KE82NT6K0512DU6N.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/4.PNG"
-            Title="图赫尔：福登、贝林、凯恩无法同时上场"
-            Info="2025-11-13 08:27:20  |  体坛周报"
+            Title="大罗：我告诉内马尔世界杯前一年只能训练、吃饭和睡觉"
+            Info="2025-11-13 09:46:12  |  懂球帝"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE7U4I3M05299JMD.html"
+            EventData="https://m.163.com/news/article/KE82KV8K0549BAP0.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/5.PNG"
-            Title="跟队记者：萨56可能续约至2029年，今夏他曾被标价3000万欧元"
-            Info="2025-11-13 08:17:02  |  懂球帝"
+            Title="55年被授中将，他认为军衔低了，签字署名全带着中将，发泄情绪"
+            Info="2025-11-13 09:39:36  |  冰雅忆史"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE7THMIV0549BAP0.html"
+            EventData="https://m.163.com/news/article/KE828RUC0556C68E.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/6.PNG"
-            Title="市民开车嘴里叼牙线棒被罚 当地交管复核后已撤销认定"
-            Info="2025-11-12 22:47:15  |  环球网资讯"
+            Title="60岁林芳兵近况，住北京豪宅，身材苗条像少女，28岁儿子是她骄傲"
+            Info="2025-11-13 08:55:45  |  代军哥哥谈娱乐"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE6SUC9G0514R9OJ.html"
+            EventData="https://m.163.com/news/article/KE7VOIV9051780D4.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/7.PNG"
-            Title="以军称打死一名越过“黄线”的武装分子"
-            Info="2025-11-13 08:07:03  |  北青网-北京青年报"
+            Title="号称3招追回欠款 男子冒用律师身份“套路“多名农民工"
+            Info="2025-11-12 20:20:05  |  红星新闻"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE7SVDBT0514R9KQ.html"
+            EventData="https://m.163.com/news/article/KE6KGTO0051492T3.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/8.PNG"
-            Title="深度｜维尼修斯还是姆巴佩？阿隆索还没有搞明白谁才是皇马真核"
-            Info="2025-11-10 22:33:31  |  K唐伯虎"
+            Title="前曼联球探：曼联不应放走卡雷拉斯；多古是不成功引援的例子"
+            Info="2025-11-13 09:36:05  |  懂球帝"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE1NBPFL0553DY4J.html"
+            EventData="https://m.163.com/news/article/KE822E070549BAP0.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/9.PNG"
-            Title="女子16刀砍死前夫获刑12年 法院：不符合正当防卫情形"
-            Info="2025-11-13 07:58:33  |  澎湃新闻"
+            Title="中方多番警告下，高市早苗保证，那句惹中国不高兴的话再也不说了"
+            Info="2025-11-13 09:34:32  |  军机Talk"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE7SFR7H0514R9P4.html"
+            EventData="https://m.163.com/news/article/KE81VJM80556DZEK.html"
             Type="Clickable" />
 
         <local:MyListItem
             Margin="-5,2,-5,8"
             Logo="https://pcl.wyc-w.top/images/toutiao/10.PNG"
-            Title="世界最大高空捕风伞成功开伞 我国风电技术迈出关键一步"
-            Info="2025-11-13 07:49:46  |  环球网资讯"
+            Title="全新起亚Telluride首发：加州设计、首尔揽胜，北美爆款预定"
+            Info="2025-11-13 09:33:08  |  驾仕派"
             EventType="打开网页"
-            EventData="https://m.163.com/news/article/KE7RVOEP0514R9OJ.html"
+            EventData="https://m.163.com/news/article/KE81T1IR051286OQ.html"
             Type="Clickable" />
                 <Grid>
                     <Grid.ColumnDefinitions>
