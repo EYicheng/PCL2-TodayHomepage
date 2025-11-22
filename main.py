@@ -387,7 +387,7 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
 </local:MyCard>
 
 '''
-    compress_content = compress_xaml_content(xaml_content) # 压缩 XAML 内容
+    compress_content = compress_xaml_content(xaml_content.replace("&nbsp;", " ")) # 压缩 XAML 内容
     with open("index.xaml", "w", encoding="utf-8") as f:
         f.write(compress_content)
     print("✅ index.xaml 文件已生成！")
