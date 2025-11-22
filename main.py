@@ -62,6 +62,12 @@ wbheaders = {
     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
 }
 
+def compress_xaml_content(content):
+    import re
+    content = re.sub(r'\s+', ' ', content)
+    content = re.sub(r'>\s+<', '><', content)
+    content = content.replace('><', '>\n<')
+    return content.strip()
 def fetch_data(url):
     try:
         response = requests.get(url)
@@ -381,19 +387,9 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
 </local:MyCard>
 
 '''
-    
-    if datetime.now().timestamp() <= 1762747200:
-        xaml_content = '''
-<local:MyCard Margin="0,0,0,15" CanSwap="False">
-    <StackPanel Margin="25,15,23,15">
-        <TextBlock TextWrapping="Wrap" Margin="0,0,0,0" FontSize="16">第十五届全国运动会今日在广州开幕，粤港澳三地联合举办！</TextBlock>
-    </StackPanel>
-</local:MyCard>
-
-''' + xaml_content
-
+    compress_content = compress_xaml_content(xaml_content) # 压缩 XAML 内容
     with open("index.xaml", "w", encoding="utf-8") as f:
-        f.write(xaml_content)
+        f.write(compress_content)
     print("✅ index.xaml 文件已生成！")
 
 def main():
