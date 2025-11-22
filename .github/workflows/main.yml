@@ -1,7 +1,19 @@
 name: Generate XAML File
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 16,18,20,22 * * 0-4"      # 北京工作日 00/02/04/06
+    - cron: "*/30 22-23,0-15 * * 0-4"    # 北京工作日 06:00-23:30
+    - cron: "*/30 16-23 * * 5"           # 北京 Sat 00-07:30
+    - cron: "*/30 0-23 * * 6"            # 北京 Sat 08 - Sun 07:30
+    - cron: "*/30 0-15 * * 0"            # 北京 Sun 08-23:30
+  push:
+    branches: [ main ]
+    paths:
+      - 'main.py'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'main.py'
   workflow_dispatch:
 
 jobs:
@@ -34,8 +46,7 @@ jobs:
       - name: Commit and push changes
         run: |
           git config --global user.name "EYiChengs-Robot"
-          git config --global user.email "228854223+EYiChengs-Robot@users.noreply.github.com"
+          git config --global user.email "${{ secrets.EYICHENGSROBOTSGITCOMMITEMAIL }}"
           git add index.xaml index.xaml.ini
-          # 如果没有变化，不报错
           git diff --cached --quiet || git commit -m "Auto update: $(date +'%Y-%m-%d %H:%M:%S')"
           git push origin main
