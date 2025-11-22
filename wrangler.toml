@@ -2,6 +2,10 @@ name = 'pcl2-todayhomepage'
 main = "worker/src.js"
 compatibility_date = "2025-01-01"
 
+[[kv_namespaces]]
+binding = "PCL2TodayHomePageFile"
+id = "3c98ce53e87f477da277d082eb89dc29"
+
 # wrangler.toml (wrangler v3.88.0^)
 [observability.logs]
 enabled = true
