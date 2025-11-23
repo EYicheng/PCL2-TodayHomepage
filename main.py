@@ -8,18 +8,12 @@ import chinese_calendar as calendar
 
 # 微博热搜：经过两个月，主任终于想起我了！喵~
 
-# TOKEN = os.environ.get("Token") if 1==1 else 
-# CHINA_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/china/latest/news?token={TOKEN}"
-# WORLD_NEWS_URL = f"https://api.istero.com/resource/v1/cctv/world/latest/news?token={TOKEN}"
-# HOLIDAY_URL = f"https://api.istero.com/resource/v1/check/holiday?token={TOKEN}&date={datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat()}"
-# TODAY_INTHEHISTORY_URL = f"https://api.istero.com/resource/v1/history/today?token={TOKEN}"
 TOUTIAO_URL = "https://www.toutiao.com/hot-event/hot-board/?origin=toutiao_pc"
 QQ_URL = "https://r.inews.qq.com/gw/event/hot_ranking_list?page_size=20"
 WY_URL = "https://m.163.com/fe/api/hot/news/flow"
 WEIBO_URL = f"https://uapis.cn/api/v1/misc/hotboard?type=weibo"
 BILIBILI_URL = "https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all"
 NOWPATH = "https://pcl.wyc-w.top/"
-# today_str = datetime.date.today().isoformat()
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 Edg/128.0.2739.42",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
@@ -315,8 +309,6 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
     </StackPanel>
 </local:MyCard>
 
-
-
 <Grid Margin="0,0,0,8">
      <Grid.ColumnDefinitions>
           <ColumnDefinition Width="1*" />
@@ -330,7 +322,6 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
      <Line X1="0" X2="100" Stroke="{{DynamicResource ColorBrush3}}" StrokeThickness="1.5"
           Stretch="Fill" Grid.Column="2" />
 </Grid>
-
 
 <local:MyCard Title="🔥 新闻热点" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
     <StackPanel Margin="25,40,23,15">
@@ -385,7 +376,6 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
         </UniformGrid>
     </StackPanel>
 </local:MyCard>
-
 '''
     compress_content = compress_xaml_content(xaml_content.replace("&nbsp;", " ")) # 压缩 XAML 内容
     with open("index.xaml", "w", encoding="utf-8") as f:
@@ -410,13 +400,6 @@ def main():
     # bilibili = fetech_data_bili(BILIBILI_URL)
     # time.sleep(1)
     bilibili = "0"
-    # china_news = fetch_data(CHINA_NEWS_URL)
-    # time.sleep(1)
-    # world_news = fetch_data(WORLD_NEWS_URL)
-    # time.sleep(1)
-    # holiday_info = fetch_data(HOLIDAY_URL)
-    # time.sleep(1)
-    # history = fetch_data(TODAY_INTHEHISTORY_URL)
     history = "0"
 
     generate_xaml(toutiao_news, nend_news, wb, wy, bilibili, history)
