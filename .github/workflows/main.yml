@@ -21,29 +21,51 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: 1. Checkout code
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.COMMIT_PAT }}
 
-      - name: Set up Python
+      - name: 2.1. Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.x"
 
-      - name: Install dependencies
+      - name: 2.2. Install dependencies
         run: |
           pip install requests
           pip install chinesecalendar
           pip install pytz
 
-      - name: Run main.py
+      - name: 3. Run main.py
         env:
           Token: ${{ secrets.Token }}
         run: |
           python main.py
 
-      - name: Commit and push changes
+      - name: 2.3. Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 2.4. Install Wrangler
+        run: npm install -g wrangler
+
+      - name: 4.1. Upload index.xaml, index.xaml.ini to Cloudflare KV
+        env:
+          CCLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          wrangler kv:put \
+              --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
+              PCL2TodayHomePageFile \
+              --path ./index.xaml
+
+          wrangler kv:put \
+              --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
+              PCL2TodayHomePageFileIni \
+              --path ./index.xaml.ini
+
+      - name: 4.2. Commit and push changes
         run: |
           git config --global user.name "EYiChengs-Robot"
           git config --global user.email "${{ secrets.EYICHENGSROBOTSGITCOMMITEMAIL }}"
