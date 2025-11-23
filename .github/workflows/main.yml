@@ -55,15 +55,15 @@ jobs:
         env:
           CCLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
-          wrangler kv:put \
-              --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
-              PCL2TodayHomePageFile \
-              --path ./index.xaml
+          wrangler kv key put \
+            --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
+            PCL2TodayHomePageFile \
+            --path ./index.xaml
 
-          wrangler kv:put \
-              --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
-              PCL2TodayHomePageFileIni \
-              --path ./index.xaml.ini
+          wrangler kv key put \
+            --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
+            PCL2TodayHomePageFileIni \
+            --path ./index.xaml.ini
 
       - name: 4.2. Commit and push changes
         run: |
