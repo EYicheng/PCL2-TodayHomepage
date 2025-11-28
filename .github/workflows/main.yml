@@ -58,13 +58,13 @@ jobs:
           wrangler kv key put \
             --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
             PCL2TodayHomePageFile \
-            --path ./index.xaml
+            --path ./index.xaml \
             --remote
 
           wrangler kv key put \
             --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
             PCL2TodayHomePageFileIni \
-            --path ./index.xaml.ini
+            --path ./index.xaml.ini \
             --remote
 
       - name: 4.2. Commit and push changes
