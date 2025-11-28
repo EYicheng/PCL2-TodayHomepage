@@ -53,7 +53,7 @@ jobs:
 
       - name: 4.1. Upload index.xaml, index.xaml.ini to Cloudflare KV
         env:
-          CCLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
           wrangler kv key put \
             --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
