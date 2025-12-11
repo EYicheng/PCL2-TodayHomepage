@@ -1,11 +1,11 @@
 name: Generate XAML File
 on:
- # schedule:
-#    - cron: "0 16,18,20,22 * * 0-4"      # 北京工作日 00/02/04/06
-#    - cron: "*/30 22-23,0-15 * * 0-4"    # 北京工作日 06:00-23:30
-#    - cron: "*/30 16-23 * * 5"           # 北京 Sat 00-07:30
-#    - cron: "*/30 0-23 * * 6"            # 北京 Sat 08 - Sun 07:30
-#    - cron: "*/30 0-15 * * 0"            # 北京 Sun 08-23:30
+  schedule:
+    - cron: "0 16,18,20,22 * * 0-4"      # 北京工作日 00/02/04/06
+    - cron: "*/30 22-23,0-15 * * 0-4"    # 北京工作日 06:00-23:30
+    - cron: "*/30 16-23 * * 5"           # 北京 Sat 00-07:30
+    - cron: "*/30 0-23 * * 6"            # 北京 Sat 08 - Sun 07:30
+    - cron: "*/30 0-15 * * 0"            # 北京 Sun 08-23:30
   push:
     branches: [ main ]
     paths:
@@ -43,29 +43,29 @@ jobs:
         run: |
           python main.py
 
-      - name: 2.3. Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
+      # - name: 2.3. Set up Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: "20"
 
-      - name: 2.4. Install Wrangler
-        run: npm install -g wrangler
+      # - name: 2.4. Install Wrangler
+      #   run: npm install -g wrangler
 
-      - name: 4.1. Upload index.xaml, index.xaml.ini to Cloudflare KV
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: |
-          wrangler kv key put \
-            --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
-            PCL2TodayHomePageFile \
-            --path ./index.xaml \
-            --remote
+      # - name: 4.1. Upload index.xaml, index.xaml.ini to Cloudflare KV
+      #   env:
+      #     CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      #   run: |
+      #     wrangler kv key put \
+      #       --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
+      #       PCL2TodayHomePageFile \
+      #       --path ./index.xaml \
+      #       --remote
 
-          wrangler kv key put \
-            --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
-            PCL2TodayHomePageFileIni \
-            --path ./index.xaml.ini \
-            --remote
+      #     wrangler kv key put \
+      #       --namespace-id ${{ vars.CF_KV_NAMESPACE_ID }} \
+      #       PCL2TodayHomePageFileIni \
+      #       --path ./index.xaml.ini \
+      #       --remote
 
       - name: 4.2. Commit and push changes
         run: |
