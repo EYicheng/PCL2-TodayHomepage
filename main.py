@@ -88,16 +88,15 @@ def doutiaonewsdata___(list):
         i += 1
         title = item.get("Title", "无标题")
         labelUrl = item.get("LabelUrl", "").replace("&", "&amp;")
-        LogoUrl = f"{NOWPATH}images/toutiao/{i}.PNG".replace("&", "&amp;")
+        LogoUrl = f"{i}".replace("&", "&amp;")
         url = item.get("Url", "").replace("&", "&amp;")
         hotValue = item.get("HotValue", 0)
         line = f'''
         <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="{LogoUrl}"
+            Style="{{StaticResource Items}}"
+            Logo="{{StaticResource Urls{LogoUrl}}}"
             Title="{title}"
             Info="🔥{hotValue}"
-            EventType="打开网页"
             EventData="{url}"
             Type="Clickable"/>'''
         items.append(line)
@@ -112,16 +111,15 @@ def nend___(list):
             title = item.get("title", "无标题").replace('"', "“")
             url = item.get("url", "#").replace("&", "&amp;")
             time = item.get("time", "未知时间")
-            LogoUrl = f"{NOWPATH}images/toutiao/{i-1}.PNG".replace("&", "&amp;")
+            LogoUrl = f"{i-1}".replace("&", "&amp;")
             abstract = item.get("abstract", "")
             # 使用 XAML 超链接语法
             line = f'''
             <local:MyListItem
-                Margin="-5,2,-5,8"
-                Logo="{LogoUrl}"
+                Style="{{StaticResource Items}}"
+                Logo="{{StaticResource Urls{LogoUrl}}}"
                 Title="{title}"
                 Info="{time}  |  {abstract}"
-                EventType="打开网页"
                 EventData="{url}"
                 Type="Clickable"/>'''
             items.append(line)
@@ -135,14 +133,13 @@ def wb(list):
         title = item.get("title", "").replace('"', "“")
         url = item.get("url", "#").replace("&", "&amp;")
         time = item.get("hot_value", "")
-        LogoUrl = f"{NOWPATH}images/toutiao/{i}.PNG".replace("&", "&amp;")
+        LogoUrl = f"{i}".replace("&", "&amp;")
         line = f'''
         <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="{LogoUrl}"
+            Style="{{StaticResource Items}}"
+            Logo="{{StaticResource Urls{LogoUrl}}}"
             Title="{title}"
             Info="🔥{time}"
-            EventType="打开网页"
             EventData="{url}"
             Type="Clickable"/>'''
         items.append(line)
@@ -157,14 +154,13 @@ def wy(list):
         url = item.get("url", "#").replace("&", "&amp;")
         time = item.get("createTime", "无标题")
         writer = item.get("source", "无作者").replace('"', "“")
-        LogoUrl = f"{NOWPATH}images/toutiao/{i}.PNG".replace("&", "&amp;")
+        LogoUrl = f"{i}".replace("&", "&amp;")
         line = f'''
         <local:MyListItem
-            Margin="-5,2,-5,8"
-            Logo="{LogoUrl}"
+            Style="{{StaticResource Items}}"
+            Logo="{{StaticResource Urls{LogoUrl}}}"
             Title="{title}"
             Info="{time}  |  {writer}"
-            EventType="打开网页"
             EventData="{url}"
             Type="Clickable"/>'''
         items.append(line)
@@ -295,6 +291,23 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
     #     blit = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取哔哩哔哩失败</TextBlock>'
 
     xaml_content = f'''
+    <StackPanel>
+<StackPanel.Resources>
+<Style TargetType="local:MyListItem" x:Key="Items">
+<Setter Property="Margin" Value="-5,2,-5,8" />
+<Setter Property="EventType" Value="打开网页" />
+</Style>
+<sys:String x:Key="Urls1">https://pcl.wyc-w.top/images/toutiao/1.PNG</sys:String>
+<sys:String x:Key="Urls2">https://pcl.wyc-w.top/images/toutiao/2.PNG</sys:String>
+<sys:String x:Key="Urls3">https://pcl.wyc-w.top/images/toutiao/3.PNG</sys:String>
+<sys:String x:Key="Urls4">https://pcl.wyc-w.top/images/toutiao/4.PNG</sys:String>
+<sys:String x:Key="Urls5">https://pcl.wyc-w.top/images/toutiao/5.PNG</sys:String>
+<sys:String x:Key="Urls6">https://pcl.wyc-w.top/images/toutiao/6.PNG</sys:String>
+<sys:String x:Key="Urls7">https://pcl.wyc-w.top/images/toutiao/7.PNG</sys:String>
+<sys:String x:Key="Urls8">https://pcl.wyc-w.top/images/toutiao/8.PNG</sys:String>
+<sys:String x:Key="Urls9">https://pcl.wyc-w.top/images/toutiao/9.PNG</sys:String>
+<sys:String x:Key="Urls10">https://pcl.wyc-w.top/images/toutiao/10.PNG</sys:String>
+</StackPanel.Resources>
 <local:MyCard Title="📅 今日" Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="16">{today_holiday}</TextBlock>
@@ -394,6 +407,7 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
 <TextBlock TextWrapping="Wrap" Margin="12,4,0,10" FontSize="14">Copyright © EYicheng 2025-2026</TextBlock>
 </StackPanel>
 </Border>
+</StackPanel>
 '''
     compress_content = compress_xaml_content(xaml_content.replace("&nbsp;", " ")) # 压缩 XAML 内容
     with open("index.xaml", "w", encoding="utf-8") as f:
