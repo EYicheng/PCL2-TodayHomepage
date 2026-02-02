@@ -50,7 +50,7 @@ export default {
         const path = url.pathname;
 
         // 只允许访问 .xaml 和 .xaml.ini 文件
-        if (!path.endsWith('.xaml') && !path.endsWith('.xaml.ini') && !path.endsWith('.PNG')) {
+        if (!path.endsWith('.xaml') && !path.endsWith('.xaml.ini') && !path.endsWith('.PNG') && !path.endsWith('.json')) {
             return new Response('Not Found', { status: 404 });
         }
 
@@ -58,12 +58,12 @@ export default {
         const referer = request.headers.get('Referer') || '';
 
         // UA 检查
-        if (!isValidUA(ua) && !path.endsWith('.PNG')) {
+        if (!isValidUA(ua) && !path.endsWith('.PNG') && !path.endsWith('.json')) {
             return new Response('Forbidden: Invalid User-Agent', { status: 403 });
         }
 
         // Referer 检查（可选，但推荐）
-        if (!isValidReferer(referer) && !path.endsWith('.PNG')) {
+        if (!isValidReferer(referer) && !path.endsWith('.PNG') && !path.endsWith('.json')) {
             return new Response('Forbidden: Invalid Referer', { status: 403 });
         }
 
