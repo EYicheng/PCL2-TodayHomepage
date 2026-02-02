@@ -99,7 +99,7 @@ def doutiaonewsdata___(list):
             Info="🔥{hotValue}"
             EventType="打开网页"
             EventData="{url}"
-            Type="Clickable" />'''
+            Type="Clickable"/>'''
         items.append(line)
     return "\n".join(items)
 
@@ -123,7 +123,7 @@ def nend___(list):
                 Info="{time}  |  {abstract}"
                 EventType="打开网页"
                 EventData="{url}"
-                Type="Clickable" />'''
+                Type="Clickable"/>'''
             items.append(line)
     return "\n".join(items)
 
@@ -144,7 +144,7 @@ def wb(list):
             Info="🔥{time}"
             EventType="打开网页"
             EventData="{url}"
-            Type="Clickable" />'''
+            Type="Clickable"/>'''
         items.append(line)
     return "\n".join(items)
 
@@ -166,7 +166,7 @@ def wy(list):
             Info="{time}  |  {writer}"
             EventType="打开网页"
             EventData="{url}"
-            Type="Clickable" />'''
+            Type="Clickable"/>'''
         items.append(line)
     return "\n".join(items)
 
@@ -188,7 +188,7 @@ def bili(list):
             Info="{desc}  ——  {time}"
             EventType="打开网页"
             EventData="{url}"
-            Type="Clickable" />'''
+            Type="Clickable"/>'''
         items.append(line)
     return "\n".join(items)
 
@@ -204,7 +204,7 @@ def format_news_items(news_list):
         line = f'''
         <local:MyListItem  Margin="-5,2,-5,8"
                     Logo="{poster}" Title="{title}" Info="{time}  |  {description}"
-                    EventType="打开网页" EventData="{url}" Type="Clickable" />'''
+                    EventType="打开网页" EventData="{url}" Type="Clickable"/>'''
         items.append(line)
     return "\n".join(items)
 
@@ -225,7 +225,7 @@ def history_items(history_list):
                 Info="{time}"
                 EventType="打开网页" 
                 EventData="https://cn.bing.com/search?q={title}" 
-                Type="Clickable" />
+                Type="Clickable"/>
             '''
         elif i == 10:
             line = f'''
@@ -235,7 +235,7 @@ def history_items(history_list):
                 Info="{time}"
                 EventType="打开网页" 
                 EventData="https://cn.bing.com/search?q={title}" 
-                Type="Clickable" />
+                Type="Clickable"/>
         </UniformGrid>
             '''
         else:
@@ -246,7 +246,7 @@ def history_items(history_list):
                 Info="{time}"
                 EventType="打开网页" 
                 EventData="https://cn.bing.com/search?q={title}" 
-                Type="Clickable" />'''
+                Type="Clickable"/>'''
             
         items.append(line)
     return "\n".join(items)
@@ -295,7 +295,6 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
     #     blit = '<TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="Red">获取哔哩哔哩失败</TextBlock>'
 
     xaml_content = f'''
-<!-- 这是 PCL 的主页自定义文件。由 Python 脚本自动生成 -->
 <local:MyCard Title="📅 今日" Margin="0,0,0,15" CanSwap="False">
     <StackPanel Margin="25,40,23,15">
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="16">{today_holiday}</TextBlock>
@@ -376,6 +375,25 @@ def generate_xaml(toutionews_data, nend, wbd, wyd, bilid, history_data):
         </UniformGrid>
     </StackPanel>
 </local:MyCard>
+<Grid Margin="0,0,0,8">
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="1*" />
+<ColumnDefinition Width="100" />
+<ColumnDefinition Width="1*" />
+</Grid.ColumnDefinitions>
+<Line X1="0" X2="100" Stroke="{{DynamicResource ColorBrush3}}" StrokeThickness="1.5" Stretch="Fill" Grid.Column="0" />
+<TextBlock Text="ℹ️ 关于主页" FontSize="15" Foreground="{{DynamicResource ColorBrush4}}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+<Line X1="0" X2="100" Stroke="{{DynamicResource ColorBrush3}}" StrokeThickness="1.5" Stretch="Fill" Grid.Column="2" />
+</Grid>
+<Border Margin="-25,0,-25,-10" CornerRadius="0" BorderThickness="0,0,0,0" Background="#80ffffff">
+<StackPanel Margin="25,25,23,15">
+<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="22" FontWeight="Bold">「今日」新闻热点主页</TextBlock>
+<local:MyIconTextButton Margin="0,0,0,0" Height="35" HorizontalAlignment="Left" Text="GitHub项目主页" EventType="打开网页" EventData="https://github.com/EYicheng/PCL2-TodayHomepage" Grid.Column="1" LogoScale="0.8" ColorType="Highlight" Logo="M41.4395 69.3848C28.8066 67.8535 19.9062 58.7617 19.9062 46.9902C19.9062 42.2051 21.6289 37.0371 24.5 33.5918C23.2559 30.4336 23.4473 23.7344 24.8828 20.959C28.7109 20.4805 33.8789 22.4902 36.9414 25.2656C40.5781 24.1172 44.4062 23.543 49.0957 23.543C53.7852 23.543 57.6133 24.1172 61.0586 25.1699C64.0254 22.4902 69.2891 20.4805 73.1172 20.959C74.457 23.543 74.6484 30.2422 73.4043 33.4961C76.4668 37.1328 78.0937 42.0137 78.0937 46.9902C78.0937 58.7617 69.1934 67.6621 56.3691 69.2891C59.623 71.3945 61.8242 75.9883 61.8242 81.252L61.8242 91.2051C61.8242 94.0762 64.2168 95.7031 67.0879 94.5547C84.4102 87.9512 98 70.6289 98 49.1914C98 22.1074 75.9883 6.69539e-07 48.9043 4.309e-07C21.8203 1.92261e-07 -1.9479e-07 22.1074 -4.3343e-07 49.1914C-6.20631e-07 70.4375 13.4941 88.0469 31.6777 94.6504C34.2617 95.6074 36.75 93.8848 36.75 91.3008L36.75 83.6445C35.4102 84.2188 33.6875 84.6016 32.1562 84.6016C25.8398 84.6016 22.1074 81.1563 19.4277 74.7441C18.375 72.1602 17.2266 70.6289 15.0254 70.3418C13.877 70.2461 13.4941 69.7676 13.4941 69.1934C13.4941 68.0449 15.4082 67.1836 17.3223 67.1836C20.0977 67.1836 22.4902 68.9063 24.9785 72.4473C26.8926 75.2227 28.9023 76.4668 31.2949 76.4668C33.6875 76.4668 35.2187 75.6055 37.4199 73.4043C39.0469 71.7773 40.291 70.3418 41.4395 69.3848Z" />
+<local:MyIconTextButton Margin="0,0,0,0" Height="35" HorizontalAlignment="Left" Text="版权信息" EventType="打开网页" EventData="https://github.com/EYicheng/PCL2-TodayHomepage/blob/main/README.md#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E" Grid.Column="1" LogoScale="0.8" ColorType="Highlight" Logo="M8.75.75V2h.985c.304 0 .603.08.867.231l1.29.736c.038.022.08.033.124.033h2.234a.75.75 0 0 1 0 1.5h-.427l2.111 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.006.005-.01.01-.045.04c-.21.176-.441.327-.686.45C14.556 10.78 13.88 11 13 11a4.498 4.498 0 0 1-2.023-.454 3.544 3.544 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L12.178 4.5h-.162c-.305 0-.604-.079-.868-.231l-1.29-.736a.245.245 0 0 0-.124-.033H8.75V13h2.5a.75.75 0 0 1 0 1.5h-6.5a.75.75 0 0 1 0-1.5h2.5V3.5h-.984a.245.245 0 0 0-.124.033l-1.289.737c-.265.15-.564.23-.869.23h-.162l2.112 4.692a.75.75 0 0 1-.154.838l-.53-.53.529.531-.001.002-.002.002-.006.006-.016.015-.045.04c-.21.176-.441.327-.686.45C4.556 10.78 3.88 11 3 11a4.498 4.498 0 0 1-2.023-.454 3.544 3.544 0 0 1-.686-.45l-.045-.04-.016-.015-.006-.006-.004-.004v-.001a.75.75 0 0 1-.154-.838L2.178 4.5H1.75a.75.75 0 0 1 0-1.5h2.234a.249.249 0 0 0 .125-.033l1.288-.737c.265-.15.564-.23.869-.23h.984V.75a.75.75 0 0 1 1.5 0Zm2.945 8.477c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327Zm-10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327Z" />
+<local:MyHint Margin="12,10,0,4" Text="重要声明：本系统生成的新闻内容来自第三方 API，新闻内容版权属于原始媒体机构。本主页仅提供技术整合，不对第三方内容的版权负责，用户需自行确保合规使用。" />
+<TextBlock TextWrapping="Wrap" Margin="12,4,0,10" FontSize="14">Copyright © EYicheng 2025-2026</TextBlock>
+</StackPanel>
+</Border>
 '''
     compress_content = compress_xaml_content(xaml_content.replace("&nbsp;", " ")) # 压缩 XAML 内容
     with open("index.xaml", "w", encoding="utf-8") as f:
