@@ -1,0 +1,44 @@
+<local:MyCard Margin="0,0,0,15" CanSwap="False" IsSwapped="False">
+<StackPanel Margin="25,25,23,15">
+<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="22" FontWeight="Bold">ℹ️ 更多信息……</TextBlock>
+</StackPanel>
+</local:MyCard>
+
+<Grid Margin="0,0,0,8">
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="1*" />
+<ColumnDefinition Width="100" />
+<ColumnDefinition Width="1*" />
+</Grid.ColumnDefinitions>
+<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" Stretch="Fill" Grid.Column="0" />
+<TextBlock Text="❤️ 友情链接" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" Stretch="Fill" Grid.Column="2" />
+</Grid>
+
+<local:MyCard Title="❤️ 其他主页" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+<StackPanel Margin="25,40,23,15">
+<local:MyListItem Margin="-5,2,-5,8" EventType="打开帮助" Logo="" Title="Minecraft 新闻" Info="最亮的信标 | PCL2主页开山鼻祖" EventData="https://news.bugjump.net/News.json" Type="Clickable"/>
+<local:MyListItem Margin="-5,2,-5,8" EventType="打开网页" Logo="" Title="PCL 主业市场" Info="最亮的信标 | 更多主页在这" EventData="https://github.com/HomePlaza-Of-PCL2/Homepage.Market" Type="Clickable"/>
+</StackPanel>
+</local:MyCard>
+
+<Grid Margin="0,0,0,8">
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="1*" />
+<ColumnDefinition Width="100" />
+<ColumnDefinition Width="1*" />
+</Grid.ColumnDefinitions>
+<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" Stretch="Fill" Grid.Column="0" />
+<TextBlock Text="🔄️ 更新日志" FontSize="15" Foreground="{DynamicResource ColorBrush4}" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+<Line X1="0" X2="100" Stroke="{DynamicResource ColorBrush3}" StrokeThickness="1.5" Stretch="Fill" Grid.Column="2" />
+</Grid>
+
+<local:MyCard Title="🔄️ 更新日志" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+<StackPanel Margin="25,40,23,15">
+<TextBlock TextWrapping="Wrap" Margin="0,10,0,10" FontSize="22" FontWeight="Bold">当前版本：v1.1</TextBlock>
+<StackPanel Margin="0,10,0,10">
+<TextBlock TextWrapping="Wrap" Margin="0,10,0,10" FontSize="22" FontWeight="Bold">v1.1：</TextBlock>
+<TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="16">添加“更多……”</TextBlock>
+</StackPanel>
+</StackPanel>
+</local:MyCard>
