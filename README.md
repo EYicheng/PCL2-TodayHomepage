@@ -4,7 +4,7 @@
   - [核心功能](#核心功能)
   - [使用说明](#使用说明)
   - [内容模块](#内容模块)
-  - [鸣谢（排名不分前后）](#鸣谢排名不分前后)
+  - [鸣谢](#鸣谢)
   - [版权声明](#版权声明)
     - [内容部分](#内容部分)
     - [代码部分](#代码部分)
@@ -42,12 +42,19 @@
    - 带热度值和图片展示
    - 分类查看选项
 
-## 鸣谢（排名不分前后）
-- [龙腾猫跃](https://afdian.com/a/LTCat)：[PCL2](https://github.com/Meloong-Git/PCL) 的作者
-- [PCL2 新闻主页](https://github.com/Light-Beacon/PCL2-NewsHomepage)：我创作此主页的灵感来源
-- [UApiPro](https://uapis.cn/)：提供免费、稳定、快速的公共 Api
-- [CreeperIsASpy](https://github.com/CreeperIsASpy)
-- [深黑森林](https://github.com/Deep-Dark-Forest)
+## 鸣谢
+
+- **[龙腾猫跃](https://afdian.com/a/LTCat)**：**[PCL2](https://github.com/Meloong-Git/PCL)** 的作者
+
+- **[PCL2 新闻主页](https://github.com/Light-Beacon/PCL2-NewsHomepage)**：我创作此主页的灵感来源
+
+- **[UApiPro](https://uapis.cn/)**：提供免费、稳定、快速的公共 Api
+
+- **[CreeperIsASpy](https://github.com/CreeperIsASpy)**
+
+- **[深黑森林](https://github.com/Deep-Dark-Forest)**
+
+> （排名不分前后）
 
 ## 版权声明
 
@@ -58,7 +65,7 @@
    - **包含的第三方新闻数据版权归原始媒体所有**
 
 ### 代码部分
-   - 范围：除由程序生成的.xaml文件
+   - 范围：除由程序生成的``.xaml``文件
    - 采用 **[GPL-3.0 license](https://www.gnu.org/licenses/gpl-3.0.html)** 许可
   
 > [!IMPORTANT]
