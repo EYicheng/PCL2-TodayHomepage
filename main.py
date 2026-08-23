@@ -86,11 +86,11 @@ def doutiaonewsdata___(list):
     i = 0
     for item in list:
         i += 1
-        title = item.get("Title", "无标题")
-        labelUrl = item.get("LabelUrl", "").replace("&", "&amp;")
-        LogoUrl = f"{i}".replace("&", "&amp;")
-        url = item.get("Url", "").replace("&", "&amp;")
-        hotValue = item.get("HotValue", 0)
+        title = item.get("Title", "无标题").replace('"', "&quot;")
+        labelUrl = item.get("LabelUrl", "").replace("&", "&amp;").replace('"', "&quot;")
+        LogoUrl = f"{i}".replace("&", "&amp;").replace('"', "&quot;")
+        url = item.get("Url", "").replace("&", "&amp;").replace('"', "&quot;")
+        hotValue = item.get("HotValue", 0).replace('"', "&quot;")
         line = f'''
         <local:MyListItem
             Style="{{StaticResource Items}}"
@@ -108,11 +108,11 @@ def nend___(list):
     for item in list:
         i += 1
         if i != 1:
-            title = item.get("title", "无标题").replace('"', "“")
-            url = item.get("url", "#").replace("&", "&amp;")
-            time = item.get("time", "未知时间")
-            LogoUrl = f"{i-1}".replace("&", "&amp;")
-            abstract = item.get("abstract", "")
+            title = item.get("title", "无标题").replace('"', "&quot;")
+            url = item.get("url", "#").replace("&", "&amp;").replace('"', "&quot;")
+            time = item.get("time", "未知时间").replace('"', "&quot;")
+            LogoUrl = f"{i-1}".replace("&", "&amp;").replace('"', "&quot;")
+            abstract = item.get("abstract", "").replace('"', "&quot;")
             # 使用 XAML 超链接语法
             line = f'''
             <local:MyListItem
@@ -130,10 +130,10 @@ def wb(list):
     i = 0
     for item in list:
         i += 1
-        title = item.get("title", "").replace('"', "“")
-        url = item.get("url", "#").replace("&", "&amp;")
-        time = item.get("hot_value", "")
-        LogoUrl = f"{i}".replace("&", "&amp;")
+        title = item.get("title", "").replace('"', "&quot;")
+        url = item.get("url", "#").replace("&", "&amp;").replace('"', "&quot;")
+        time = item.get("hot_value", "").replace('"', "&quot;")
+        LogoUrl = f"{i}".replace("&", "&amp;").replace('"', "&quot;")
         line = f'''
         <local:MyListItem
             Style="{{StaticResource Items}}"
@@ -150,11 +150,11 @@ def wy(list):
     i = 0
     for item in list:
         i += 1
-        title = item.get("title", "无标题").replace('"', "“")
-        url = item.get("url", "#").replace("&", "&amp;")
-        time = item.get("createTime", "无标题")
-        writer = item.get("source", "无作者").replace('"', "“")
-        LogoUrl = f"{i}".replace("&", "&amp;")
+        title = item.get("title", "无标题").replace('"', "&quot;")
+        url = item.get("url", "#").replace("&", "&amp;").replace('"', "&quot;")
+        time = item.get("createTime", "无标题").replace('"', "&quot;")
+        writer = item.get("source", "无作者").replace('"', "&quot;")
+        LogoUrl = f"{i}".replace("&", "&amp;").replace('"', "&quot;")
         line = f'''
         <local:MyListItem
             Style="{{StaticResource Items}}"
@@ -171,11 +171,11 @@ def bili(list):
     i = 0
     for item in list:
         i += 1
-        title = item.get("title", "无标题").replace('"', "“")
-        url = item.get("short_link_v2", "#").replace("&", "&amp;")
-        time = item.get("owner", {}).get("name", "无标题").replace('"', "“")
-        LogoUrl = item.get("pic", "").replace("&", "&amp;")
-        desc = item.get("desc", "").replace('"', "“")
+        title = item.get("title", "无标题").replace('"', "&quot;")
+        url = item.get("short_link_v2", "#").replace("&", "&amp;").replace('"', "&quot;")
+        time = item.get("owner", {}).get("name", "无标题").replace('"', "&quot;")
+        LogoUrl = item.get("pic", "").replace("&", "&amp;").replace('"', "&quot;")
+        desc = item.get("desc", "").replace('"', "&quot;")
         line = f'''
         <local:MyListItem
             Margin="-5,2,-5,8"
@@ -191,11 +191,11 @@ def bili(list):
 def format_news_items(news_list):
     items = []
     for item in news_list:
-        title = item.get("title", "无标题")
-        url = item.get("url", "#")
-        time = item.get("time", "未知时间")
-        poster = item.get("poster", "pack://application:,,,/images/Blocks/RedstoneBlock.png")
-        description = item.get("description", "")
+        title = item.get("title", "无标题").replace('"', "&quot;")
+        url = item.get("url", "#").replace('"', "&quot;")
+        time = item.get("time", "未知时间").replace('"', "&quot;")
+        poster = item.get("poster", "pack://application:,,,/images/Blocks/RedstoneBlock.png").replace('"', "&quot;")
+        description = item.get("description", "").replace('"', "&quot;")
         # 使用 XAML 超链接语法
         line = f'''
         <local:MyListItem  Margin="-5,2,-5,8"
