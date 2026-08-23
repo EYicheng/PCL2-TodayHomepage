@@ -16,7 +16,7 @@
 <local:MyCard Title="❤️ 其他主页" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
 <StackPanel Margin="25,40,23,15">
 <local:MyListItem Margin="-5,2,-5,8" EventType="打开帮助" Logo="" Title="Minecraft 新闻" Info="最亮的信标 | PCL2主页开山鼻祖" EventData="https://news.bugjump.net/News.json" Type="Clickable"/>
-<local:MyListItem Margin="-5,2,-5,8" EventType="打开网页" Logo="" Title="PCL 主业市场" Info="最亮的信标 | 更多主页在这" EventData="https://github.com/HomePlaza-Of-PCL2/Homepage.Market" Type="Clickable"/>
+<local:MyListItem Margin="-5,2,-5,8" EventType="打开网页" Logo="" Title="PCL 主页市场" Info="更多主页在这" EventData="https://github.com/HomePlaza-Of-PCL2/Homepage.Market" Type="Clickable"/>
 </StackPanel>
 </local:MyCard>
 <Grid Margin="0,0,0,8">
